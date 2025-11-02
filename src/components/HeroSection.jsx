@@ -4,8 +4,8 @@ import './HeroSection.css';
 
 const HeroSection = () => {
   const handleCTA = () => {
-    // navigate to roadmap page
-    window.location.href = '/roadmap';
+    // redirect to home page
+    window.location.href = '/';
   };
 
   return (
@@ -31,15 +31,6 @@ const HeroSection = () => {
             >
               Take a Look
             </motion.button>
-
-            <motion.a
-              className="btn btn-secondary"
-              href="#preview"
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              Sneak Peek
-            </motion.a>
           </div>
 
           <p className="microcopy">Where confused devs get unconfused. (Yes, really.)</p>
@@ -52,19 +43,26 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.12 }}
         >
           <div className="mock-canvas">
-            <div className="mock-column">
+            <div className="mock-stacks-grid">
               <div className="mock-card">
-                <div className="mock-icon">⚛️</div>
-                <div className="mock-name">React</div>
+                <div className="mock-icon"><i className="fab fa-react"></i></div>
+                <div className="mock-name">MERN</div>
               </div>
-            </div>
-
-            <div className="mock-connector" />
-
-            <div className="mock-column">
-              <div className="mock-card small">Node</div>
-              <div className="mock-card small">Express</div>
-              <div className="mock-card small">Postgres</div>
+              
+              <div className="mock-card">
+                <div className="mock-icon"><i className="fab fa-angular"></i></div>
+                <div className="mock-name">MEAN</div>
+              </div>
+              
+              <div className="mock-card">
+                <div className="mock-icon"><i className="fab fa-java"></i></div>
+                <div className="mock-name">Java Stack</div>
+              </div>
+              
+              <div className="mock-card">
+                <div className="mock-icon"><i className="fab fa-python"></i></div>
+                <div className="mock-name">LAMP/LEMP</div>
+              </div>
             </div>
           </div>
         </motion.div>

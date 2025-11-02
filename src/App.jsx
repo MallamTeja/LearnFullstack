@@ -117,12 +117,14 @@ function App() {
   return (
     <div className="App">
       <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
-      {/* Global search available on all pages */}
-      <div style={{ paddingTop: '80px' }}>
-        <div className="container">
-          <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      {/* Global search available on all pages except home */}
+      {currentPage !== 'home' && (
+        <div style={{ paddingTop: '80px' }}>
+          <div className="container">
+            <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+          </div>
         </div>
-      </div>
+      )}
       
       <AnimatePresence mode="wait">
         {renderPage()}

@@ -113,86 +113,6 @@ const TechTree = () => {
     );
   };
 
-  // Initialize nodes and edges from data
-  React.useEffect(() => {
-    // Initialize with 'All' category showing all nodes and edges
-    const relatedNodeIds = getRelatedNodes('All');
-    const filteredEdgeData = getFilteredEdges(relatedNodeIds);
-    
-    const initialNodes = treeData.nodes.map((node) => ({
-      id: node.id,
-      type: 'default',
-      position: node.position,
-      data: {
-        label: node.name,
-        category: node.category,
-        level: node.level,
-        color: node.color,
-      },
-      style: {
-        background: node.color,
-        color: '#ffffff',
-        border: '2px solid #00ffff',
-        borderRadius: '12px',
-        padding: '12px 16px',
-        fontSize: '13px',
-        fontWeight: 'bold',
-        minWidth: '100px',
-        textAlign: 'center',
-        boxShadow: `0 4px 20px ${node.color}40`,
-      },
-    }));
-
-    const initialEdges = filteredEdgeData.map((edge) => ({
-      id: edge.id,
-      source: edge.source,
-      target: edge.target,
-      type: 'smoothstep',
-      animated: true,
-      style: {
-        stroke: getEdgeColor(edge.type),
-        strokeWidth: 3,
-      },
-      markerEnd: {
-        type: 'arrowclosed',
-        color: getEdgeColor(edge.type),
-        width: 20,
-        height: 20,
-      },
-      label: getEdgeLabel(edge.type),
-      labelStyle: {
-        fontSize: '10px',
-        fontWeight: 'bold',
-        color: getEdgeColor(edge.type),
-      },
-      labelBgStyle: {
-        fill: 'rgba(0,0,0,0.8)',
-        fillOpacity: 0.8,
-      },
-    }));
-
-    setNodes(initialNodes);
-    setEdges(initialEdges);
-  }, [setNodes, setEdges]);
-
-  const onConnect = useCallback((params) => setEdges((eds) => addEdge(params, eds)), [setEdges]);
-
-  const categories = [
-    'All', 
-    'Frontend', 
-    'Backend', 
-    'Database', 
-    'DevOps', 
-    'AWS',
-    'Messaging',
-    'CI/CD',
-    'Observability',
-    'Realtime',
-    'Blockchain',
-    'AI / ML',
-    'Deployment'
-  ];
-
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
     const relatedNodeIds = getRelatedNodes(category);
@@ -257,6 +177,29 @@ const TechTree = () => {
     setNodes(updatedNodes);
     setEdges(updatedEdges);
   };
+
+  // Initialize nodes and edges from data
+  React.useEffect(() => {
+    handleCategoryChange('All');
+  }, []);
+
+  const onConnect = useCallback((params) => setEdges((eds) => addEdge(params, eds)), [setEdges]);
+
+  const categories = [
+    'All', 
+    'Frontend', 
+    'Backend', 
+    'Database', 
+    'DevOps', 
+    'AWS',
+    'Messaging',
+    'CI/CD',
+    'Observability',
+    'Realtime',
+    'Blockchain',
+    'AI / ML',
+    'Deployment'
+  ];
 
   return (
     <motion.div
@@ -367,17 +310,17 @@ const TechTree = () => {
             <div className="info-card">
               <i className="fas fa-route"></i>
               <h3>Learning Paths</h3>
-              <p>Follow the arrows to understand the optimal learning sequence</p>
+              <p>Follow the arrows to understand the optimal learning sequence and relationships</p>
             </div>
             <div className="info-card">
               <i className="fas fa-filter"></i>
               <h3>Category Filtering</h3>
-              <p>Filter by technology category to focus on specific learning areas</p>
+              <p>Filter by technology category to focus on specific learning areas and their connections</p>
             </div>
             <div className="info-card">
               <i className="fas fa-search-plus"></i>
               <h3>Interactive Exploration</h3>
-              <p>Zoom, pan, and explore the relationships between technologies</p>
+              <p>Zoom, pan, and explore the relationships between technologies with labeled connections</p>
             </div>
           </div>
         </motion.div>
