@@ -731,6 +731,380 @@
         "TensorFlow"
       ],
       "iconUrl": "https://via.placeholder.com/48"
+    },
+    {
+      "id": 61,
+      "name": "Razorpay",
+      "category": "Payment Systems",
+      "desc": "India's leading payment gateway solution. Accept online payments, UPI, cards, wallets, and net banking with easy integration.",
+      "url": "https://razorpay.com/",
+      "dependencies": [],
+      "leads_to": [],
+      "iconUrl": "https://via.placeholder.com/48"
+    },
+    {
+      "id": 62,
+      "name": "CircleCI",
+      "category": "CI/CD",
+      "desc": "Continuous integration and delivery platform. Automate testing, building, and deployment with powerful workflows.",
+      "url": "https://circleci.com/",
+      "dependencies": [],
+      "leads_to": [],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/circleci/circleci-plain.svg"
+    },
+    {
+      "id": 63,
+      "name": "Kong",
+      "category": "APIs",
+      "desc": "API gateway and service mesh platform. Manage, secure, and observe APIs and microservices at scale.",
+      "url": "https://konghq.com/",
+      "dependencies": [],
+      "leads_to": [],
+      "iconUrl": "https://via.placeholder.com/48"
+    },
+    {
+      "id": 64,
+      "name": "Postman",
+      "category": "APIs",
+      "desc": "API development environment. Test, document, and collaborate on APIs with powerful tools and automation.",
+      "url": "https://www.postman.com/",
+      "dependencies": [],
+      "leads_to": [],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-plain.svg"
+    },
+    {
+      "id": 65,
+      "name": "Ruby",
+      "category": "Backend",
+      "desc": "Dynamic, object-oriented programming language. Known for its elegant syntax and productivity-focused design.",
+      "url": "https://www.ruby-lang.org/",
+      "dependencies": [],
+      "leads_to": [
+        "Ruby on Rails"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg"
+    },
+    {
+      "id": 66,
+      "name": "Spring Boot",
+      "category": "Backend",
+      "desc": "Java framework that simplifies Spring development. Auto-configuration and embedded servers for rapid application development.",
+      "url": "https://spring.io/projects/spring-boot",
+      "dependencies": [
+        "Java"
+      ],
+      "leads_to": [
+        "Spring Security",
+        "Spring Data"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+    },
+    {
+      "id": 67,
+      "name": "Supabase",
+      "category": "Database",
+      "desc": "Open-source Firebase alternative. Instant APIs, real-time subscriptions, and authentication built on PostgreSQL.",
+      "url": "https://supabase.com/",
+      "dependencies": [
+        "PostgreSQL"
+      ],
+      "leads_to": [],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg"
+    },
+    {
+      "id": 68,
+      "name": "DigitalOcean",
+      "category": "Cloud & DevOps",
+      "desc": "Simple cloud infrastructure for developers. Droplets, managed databases, and Kubernetes clusters made easy.",
+      "url": "https://www.digitalocean.com/",
+      "dependencies": [],
+      "leads_to": [
+        "Docker",
+        "Kubernetes"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/digitalocean/digitalocean-original.svg"
+    },
+    {
+      "id": 69,
+      "name": "Google Cloud",
+      "category": "Cloud & DevOps",
+      "desc": "Google's cloud platform offering compute, storage, AI/ML, and data analytics services at scale.",
+      "url": "https://cloud.google.com/",
+      "dependencies": [],
+      "leads_to": [
+        "BigQuery",
+        "Cloud Functions"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"
+    },
+    {
+      "id": 70,
+      "name": "Cloudflare",
+      "category": "Cloud & DevOps",
+      "desc": "Web infrastructure and website security company. CDN, DDoS protection, and edge computing services.",
+      "url": "https://www.cloudflare.com/",
+      "dependencies": [],
+      "leads_to": [
+        "CDN"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudflare/cloudflare-original.svg"
+    },
+    {
+      "id": 71,
+      "name": "ECS (AWS)",
+      "category": "Cloud & DevOps",
+      "desc": "Amazon Elastic Container Service. Fully managed container orchestration service for Docker containers.",
+      "url": "https://aws.amazon.com/ecs/",
+      "dependencies": [
+        "Docker",
+        "AWS"
+      ],
+      "leads_to": [
+        "Fargate"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"
+    },
+    {
+      "id": 72,
+      "name": "GitLab",
+      "category": "Version Control",
+      "desc": "Complete DevOps platform with Git repository management, CI/CD, and project management tools.",
+      "url": "https://gitlab.com/",
+      "dependencies": [
+        "Git"
+      ],
+      "leads_to": [
+        "GitLab CI/CD"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg"
+    },
+    {
+      "id": 73,
+      "name": "GitBucket",
+      "category": "Version Control",
+      "desc": "Git web platform powered by Scala. Self-hosted Git service with GitHub-like interface and features.",
+      "url": "https://gitbucket.github.io/",
+      "dependencies": [
+        "Git"
+      ],
+      "leads_to": [],
+      "iconUrl": "https://via.placeholder.com/48"
+    },
+    {
+      "id": 74,
+      "name": "GitLens",
+      "category": "Version Control",
+      "desc": "VS Code extension that enhances Git capabilities. Git blame annotations, code lens, and repository insights.",
+      "url": "https://gitlens.amod.io/",
+      "dependencies": [
+        "Git"
+      ],
+      "leads_to": [],
+      "iconUrl": "https://via.placeholder.com/48"
+    },
+    {
+      "id": 75,
+      "name": "Render",
+      "category": "Deployment",
+      "desc": "Cloud platform for hosting web services, static sites, and databases. Simple deployments with Git integration.",
+      "url": "https://render.com/",
+      "dependencies": [],
+      "leads_to": [],
+      "iconUrl": "https://via.placeholder.com/48"
+    },
+    {
+      "id": 76,
+      "name": "Railway",
+      "category": "Deployment",
+      "desc": "Infrastructure platform where you can provision infrastructure, develop with that infrastructure locally, and deploy to the cloud.",
+      "url": "https://railway.app/",
+      "dependencies": [],
+      "leads_to": [],
+      "iconUrl": "https://via.placeholder.com/48"
+    },
+    {
+      "id": 77,
+      "name": "AWS Amplify",
+      "category": "Deployment",
+      "desc": "Full-stack development platform for building and deploying web and mobile applications on AWS.",
+      "url": "https://aws.amazon.com/amplify/",
+      "dependencies": [
+        "AWS"
+      ],
+      "leads_to": [],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"
+    },
+    {
+      "id": 78,
+      "name": "Solana",
+      "category": "Blockchain",
+      "desc": "High-performance blockchain supporting decentralized apps and crypto-currencies. Fast, secure, and censorship-resistant.",
+      "url": "https://solana.com/",
+      "dependencies": [],
+      "leads_to": [
+        "Rust",
+        "Web3.js"
+      ],
+      "iconUrl": "https://via.placeholder.com/48"
+    },
+    {
+      "id": 79,
+      "name": "Avalanche (AVAX)",
+      "category": "Blockchain",
+      "desc": "Platform for decentralized applications and custom blockchain networks. Fast, low-cost, and eco-friendly.",
+      "url": "https://www.avax.network/",
+      "dependencies": [],
+      "leads_to": [
+        "Solidity"
+      ],
+      "iconUrl": "https://via.placeholder.com/48"
+    },
+    {
+      "id": 80,
+      "name": "Chainlink",
+      "category": "Blockchain",
+      "desc": "Decentralized oracle network that provides real-world data to blockchain smart contracts securely.",
+      "url": "https://chain.link/",
+      "dependencies": [
+        "Solidity"
+      ],
+      "leads_to": [],
+      "iconUrl": "https://via.placeholder.com/48"
+    },
+    {
+      "id": 81,
+      "name": "Scikit-Learn",
+      "category": "AI / ML",
+      "desc": "Machine learning library for Python. Simple and efficient tools for data mining and analysis built on NumPy and SciPy.",
+      "url": "https://scikit-learn.org/",
+      "dependencies": [
+        "Python"
+      ],
+      "leads_to": [
+        "Pandas",
+        "NumPy"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg"
+    },
+    {
+      "id": 82,
+      "name": "OpenCV",
+      "category": "AI / ML",
+      "desc": "Open-source computer vision and machine learning software library. Image processing, video analysis, and AI vision tasks.",
+      "url": "https://opencv.org/",
+      "dependencies": [
+        "Python"
+      ],
+      "leads_to": [],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg"
+    },
+    {
+      "id": 83,
+      "name": "XGBoost",
+      "category": "AI / ML",
+      "desc": "Optimized gradient boosting framework. Highly efficient and flexible machine learning library for structured data.",
+      "url": "https://xgboost.readthedocs.io/",
+      "dependencies": [
+        "Python"
+      ],
+      "leads_to": [
+        "Scikit-Learn"
+      ],
+      "iconUrl": "https://via.placeholder.com/48"
+    },
+    {
+      "id": 84,
+      "name": "Google Colab",
+      "category": "AI / ML",
+      "desc": "Free cloud-based Jupyter notebook environment for machine learning and data science with GPU/TPU support.",
+      "url": "https://colab.research.google.com/",
+      "dependencies": [
+        "Python"
+      ],
+      "leads_to": [
+        "TensorFlow",
+        "PyTorch"
+      ],
+      "iconUrl": "https://via.placeholder.com/48"
+    },
+    {
+      "id": 85,
+      "name": "Microservices",
+      "category": "System Design",
+      "desc": "Architectural pattern that structures applications as a collection of loosely coupled, independently deployable services.",
+      "url": "https://microservices.io/",
+      "dependencies": [],
+      "leads_to": [
+        "Docker",
+        "Kubernetes",
+        "API Gateway"
+      ],
+      "iconUrl": "https://via.placeholder.com/48"
+    },
+    {
+      "id": 86,
+      "name": "Low Level Design (LLD)",
+      "category": "System Design",
+      "desc": "Detailed design of individual components and classes. Focuses on implementation details, data structures, and algorithms.",
+      "url": "https://en.wikipedia.org/wiki/Low-level_design",
+      "dependencies": [],
+      "leads_to": [
+        "Design Patterns",
+        "SOLID Principles"
+      ],
+      "iconUrl": "https://via.placeholder.com/48"
+    },
+    {
+      "id": 87,
+      "name": "High Level Design (HLD)",
+      "category": "System Design",
+      "desc": "System architecture design that defines the overall structure, components, and their interactions at a high level.",
+      "url": "https://en.wikipedia.org/wiki/High-level_design",
+      "dependencies": [],
+      "leads_to": [
+        "Low Level Design (LLD)",
+        "System Architecture"
+      ],
+      "iconUrl": "https://via.placeholder.com/48"
+    },
+    {
+      "id": 88,
+      "name": "Functional Requirements",
+      "category": "System Design",
+      "desc": "Define what the system should do. Specify the behavior, features, and functionality that the system must provide.",
+      "url": "https://en.wikipedia.org/wiki/Functional_requirement",
+      "dependencies": [],
+      "leads_to": [
+        "Non-functional Requirements"
+      ],
+      "iconUrl": "https://via.placeholder.com/48"
+    },
+    {
+      "id": 89,
+      "name": "Non-functional Requirements",
+      "category": "System Design",
+      "desc": "Define how the system should behave. Include performance, scalability, security, reliability, and usability constraints.",
+      "url": "https://en.wikipedia.org/wiki/Non-functional_requirement",
+      "dependencies": [
+        "Functional Requirements"
+      ],
+      "leads_to": [
+        "Performance Testing",
+        "Security"
+      ],
+      "iconUrl": "https://via.placeholder.com/48"
+    },
+    {
+      "id": 90,
+      "name": "UML",
+      "category": "System Design",
+      "desc": "Unified Modeling Language for visualizing system design. Standard notation for class diagrams, sequence diagrams, and more.",
+      "url": "https://www.uml.org/",
+      "dependencies": [],
+      "leads_to": [
+        "Design Patterns"
+      ],
+      "iconUrl": "https://via.placeholder.com/48"
     }
   ],
   "categories": [
