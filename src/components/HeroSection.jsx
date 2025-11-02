@@ -13,29 +13,52 @@ const HeroSection = ({ setCurrentPage }) => {
   return (
     <section className="hero-section-landing">
       <div className="hero-inner app-container">
-        <motion.div
-          className="hero-content-center"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-        >
+        <div className="hero-content-center">
           <div className="hero-text-center">
-            <h1 className="hero-title">Build Projects Like a Pro</h1>
-            <p className="microcopy">Where confused devs get unconfused. (Yes, really.)</p>
+            <motion.h1 
+              className="hero-title"
+              initial={{ opacity: 0, y: -100 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ 
+                duration: 0.8, 
+                type: "spring", 
+                stiffness: 120, 
+                damping: 10 
+              }}
+            >
+              Build Projects Like a Pro
+            </motion.h1>
+            <motion.p 
+              className="microcopy"
+              initial={{ opacity: 0, y: -80 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ 
+                duration: 0.7, 
+                type: "spring", 
+                stiffness: 100, 
+                damping: 12,
+                delay: 0.2
+              }}
+            >
+              Where confused devs get unconfused. (Yes, really.)
+            </motion.p>
           </div>
           
           {/* Professional Tech Stack Cards Section */}
-          <motion.div 
-            className="tech-stacks-professional"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-          >
+          <div className="tech-stacks-professional">
             <div className="professional-stacks-grid">
               <motion.div 
                 className="professional-stack-card"
+                initial={{ opacity: 0, y: 120 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ 
+                  duration: 0.9, 
+                  type: "spring", 
+                  stiffness: 80, 
+                  damping: 15,
+                  delay: 0.5
+                }}
                 whileHover={{ y: -8, scale: 1.02 }}
-                transition={{ type: "spring", stiffness: 300 }}
               >
                 <div className="stack-icon mern">
                   <i className="fab fa-node-js"></i>
@@ -47,8 +70,16 @@ const HeroSection = ({ setCurrentPage }) => {
 
               <motion.div 
                 className="professional-stack-card"
+                initial={{ opacity: 0, y: 120 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ 
+                  duration: 0.9, 
+                  type: "spring", 
+                  stiffness: 80, 
+                  damping: 15,
+                  delay: 0.6
+                }}
                 whileHover={{ y: -8, scale: 1.02 }}
-                transition={{ type: "spring", stiffness: 300 }}
               >
                 <div className="stack-icon mean">
                   <i className="fab fa-angular"></i>
@@ -60,8 +91,16 @@ const HeroSection = ({ setCurrentPage }) => {
 
               <motion.div 
                 className="professional-stack-card"
+                initial={{ opacity: 0, y: 120 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ 
+                  duration: 0.9, 
+                  type: "spring", 
+                  stiffness: 80, 
+                  damping: 15,
+                  delay: 0.7
+                }}
                 whileHover={{ y: -8, scale: 1.02 }}
-                transition={{ type: "spring", stiffness: 300 }}
               >
                 <div className="stack-icon java">
                   <i className="fab fa-java"></i>
@@ -73,8 +112,16 @@ const HeroSection = ({ setCurrentPage }) => {
 
               <motion.div 
                 className="professional-stack-card"
+                initial={{ opacity: 0, y: 120 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ 
+                  duration: 0.9, 
+                  type: "spring", 
+                  stiffness: 80, 
+                  damping: 15,
+                  delay: 0.8
+                }}
                 whileHover={{ y: -8, scale: 1.02 }}
-                transition={{ type: "spring", stiffness: 300 }}
               >
                 <div className="stack-icon lamp">
                   <i className="fab fa-php"></i>
