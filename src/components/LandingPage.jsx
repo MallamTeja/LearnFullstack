@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import './LandingPage.css';
+import HeroSection from './HeroSection';
+import AboutSection from './AboutSection';
+import HowItWorks from './HowItWorks';
+import PreviewSection from './PreviewSection';
 
 const LandingPage = () => {
   const [email, setEmail] = useState('');
@@ -19,81 +23,10 @@ const LandingPage = () => {
 
   return (
     <div className="landing-page">
-      {/* Hero Section */}
-      <section className="hero-section">
-        <div className="hero-container">
-          <motion.div 
-            className="hero-content"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <h1 className="hero-headline">
-              Master Modern Tech Stacks in 
-              <span className="gradient-text"> Half the Time</span>
-            </h1>
-            <p className="hero-subheadline">
-              Interactive learning platform that shows you exactly which technologies to learn next with visual roadmaps and hands-on practice
-            </p>
-            <div className="hero-cta">
-              <motion.button 
-                className="cta-primary"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={handleCTA}
-              >
-                <i className="fas fa-rocket"></i>
-                Start Learning Free
-              </motion.button>
-              <motion.button 
-                className="cta-secondary"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <i className="fas fa-play"></i>
-                Watch Demo
-              </motion.button>
-            </div>
-            <div className="hero-stats">
-              <div className="stat">
-                <span className="stat-number">10K+</span>
-                <span className="stat-label">Developers Learning</span>
-              </div>
-              <div className="stat">
-                <span className="stat-number">40+</span>
-                <span className="stat-label">Tech Stacks</span>
-              </div>
-              <div className="stat">
-                <span className="stat-number">95%</span>
-                <span className="stat-label">Success Rate</span>
-              </div>
-            </div>
-          </motion.div>
-          
-          <motion.div 
-            className="hero-visual"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            <div className="tech-preview">
-              <div className="preview-card active">
-                <i className="fab fa-react"></i>
-                <span>React</span>
-              </div>
-              <div className="preview-card">
-                <i className="fab fa-node-js"></i>
-                <span>Node.js</span>
-              </div>
-              <div className="preview-card">
-                <i className="fas fa-database"></i>
-                <span>MongoDB</span>
-              </div>
-              <div className="connection-line"></div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      <HeroSection />
+      <AboutSection />
+      <HowItWorks />
+      <PreviewSection />
 
       {/* Problem Section */}
       <section className="problem-section">
@@ -336,11 +269,21 @@ const LandingPage = () => {
             <div className="company-logos">
               <h4>Used by developers at</h4>
               <div className="logos-grid">
-                <div className="company-logo">Google</div>
-                <div className="company-logo">Microsoft</div>
-                <div className="company-logo">Amazon</div>
-                <div className="company-logo">Netflix</div>
-                <div className="company-logo">Spotify</div>
+                <div className="company-logo" aria-hidden>
+                  <svg width="80" height="28" viewBox="0 0 80 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="80" height="28" rx="4" fill="#E6EEF8" opacity="0.06"/><text x="50%" y="50%" dominantBaseline="middle" textAnchor="middle" fill="#94a3b8" fontSize="10">Google</text></svg>
+                </div>
+                <div className="company-logo" aria-hidden>
+                  <svg width="80" height="28" viewBox="0 0 80 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="80" height="28" rx="4" fill="#E6EEF8" opacity="0.06"/><text x="50%" y="50%" dominantBaseline="middle" textAnchor="middle" fill="#94a3b8" fontSize="10">Microsoft</text></svg>
+                </div>
+                <div className="company-logo" aria-hidden>
+                  <svg width="80" height="28" viewBox="0 0 80 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="80" height="28" rx="4" fill="#E6EEF8" opacity="0.06"/><text x="50%" y="50%" dominantBaseline="middle" textAnchor="middle" fill="#94a3b8" fontSize="10">Amazon</text></svg>
+                </div>
+                <div className="company-logo" aria-hidden>
+                  <svg width="80" height="28" viewBox="0 0 80 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="80" height="28" rx="4" fill="#E6EEF8" opacity="0.06"/><text x="50%" y="50%" dominantBaseline="middle" textAnchor="middle" fill="#94a3b8" fontSize="10">Netflix</text></svg>
+                </div>
+                <div className="company-logo" aria-hidden>
+                  <svg width="80" height="28" viewBox="0 0 80 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="80" height="28" rx="4" fill="#E6EEF8" opacity="0.06"/><text x="50%" y="50%" dominantBaseline="middle" textAnchor="middle" fill="#94a3b8" fontSize="10">Spotify</text></svg>
+                </div>
               </div>
             </div>
           </motion.div>

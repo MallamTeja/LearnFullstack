@@ -1,7 +1,8 @@
 /* HeroSection - mobile-first responsive styles */
 .hero-section-landing {
   padding: 2rem 1rem;
-  background: linear-gradient(180deg, rgba(6,10,20,0.6), rgba(8,12,22,0.7));
+  /* darker hero gradient for more depth */
+  background: linear-gradient(135deg, #10182A 0%, rgba(31,41,55,0.65) 50%, rgba(8,12,22,0.6) 100%);
   color: var(--text, #e6eef8);
 }
 
@@ -52,8 +53,8 @@
 
 /* CTA styling reuse */
 .btn { font-family: inherit; }
-.btn-primary { background: linear-gradient(45deg,#00ffff,#64ffda); color:#061018; padding:0.75rem 1.25rem; border-radius:22px; }
-.btn-secondary { border:1px solid rgba(255,255,255,0.08); padding:0.65rem 1rem; border-radius:20px; color:var(--muted,#94a3b8); }
+.btn-primary { background: linear-gradient(90deg, var(--primary-start), var(--primary-end)); color: var(--cta-text); padding: 0.9rem 1.6rem; border-radius: 14px; font-weight: 700; box-shadow: 0 12px 40px rgba(16,24,42,0.55); }
+.btn-secondary { border:1px solid rgba(255,255,255,0.06); padding:0.65rem 1rem; border-radius:20px; color:var(--muted,#9CA3AF); }
 .hero {
   color: var(--text, #e2e8f0);
   background: linear-gradient(180deg, rgba(6,12,23,0.6), transparent);

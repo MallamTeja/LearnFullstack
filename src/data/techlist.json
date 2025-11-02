@@ -400,10 +400,111 @@
       "dependencies": ["Python"],
       "leads_to": []
     }
+    ,
+    {
+      "id": 41,
+      "name": "WebSockets",
+      "category": "Realtime",
+      "icon": "fas fa-wave-square",
+      "desc": "Low-latency, full-duplex communication over a single TCP connection. Ideal for chat, live dashboards, and multiplayer games. Use with native WebSocket API or libraries like Socket.io for fallbacks and reconnection logic.",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API",
+      "dependencies": ["HTTP"],
+      "leads_to": ["Socket.io", "WebRTC"]
+    },
+    {
+      "id": 42,
+      "name": "WebRTC",
+      "category": "Realtime",
+      "icon": "fas fa-video",
+      "desc": "Peer-to-peer real-time media and data streams for audio, video and low-latency data channels. Used for video calls, screen sharing, and P2P data transfer. Involves signaling servers, NAT traversal (STUN/TURN), and codecs.",
+      "url": "https://webrtc.org/",
+      "dependencies": ["WebSockets"],
+      "leads_to": []
+    },
+    {
+      "id": 43,
+      "name": "Kafka",
+      "category": "Messaging",
+      "icon": "fas fa-stream",
+      "desc": "Distributed streaming platform for building real-time data pipelines and event-driven architectures. Durable, partitioned logs with high throughput and fault tolerance. Great for analytics and event sourcing.",
+      "url": "https://kafka.apache.org/",
+      "dependencies": [],
+      "leads_to": ["Stream Processing"]
+    },
+    {
+      "id": 44,
+      "name": "RabbitMQ",
+      "category": "Messaging",
+      "icon": "fas fa-envelope-open-text",
+      "desc": "Traditional message broker implementing AMQP. Useful for decoupling services, retry policies, and guaranteed delivery patterns. Easier to reason about for smaller systems compared to Kafka.",
+      "url": "https://www.rabbitmq.com/",
+      "dependencies": [],
+      "leads_to": []
+    },
+    {
+      "id": 45,
+      "name": "Load Balancing",
+      "category": "System Design",
+      "icon": "fas fa-balance-scale",
+      "desc": "Distributes network or application traffic across multiple servers to improve availability and reliability. Covers algorithms (round-robin, least connections), sticky sessions, and health checks.",
+      "url": "https://en.wikipedia.org/wiki/Load_balancing_(computing)",
+      "dependencies": [],
+      "leads_to": ["CDN", "Autoscaling"]
+    },
+    {
+      "id": 46,
+      "name": "CDN",
+      "category": "System Design",
+      "icon": "fas fa-network-wired",
+      "desc": "Content Delivery Networks cache static assets at the edge to reduce latency and offload origin servers. Important for global performance, caching headers, and cache invalidation strategies.",
+      "url": "https://en.wikipedia.org/wiki/Content_delivery_network",
+      "dependencies": [],
+      "leads_to": ["Caching"]
+    },
+    {
+      "id": 47,
+      "name": "Prometheus",
+      "category": "Observability",
+      "icon": "fas fa-chart-line",
+      "desc": "Metrics collection and alerting toolkit for monitoring applications and infrastructure. Works well with Grafana for dashboards and alerting rules for production readiness.",
+      "url": "https://prometheus.io/",
+      "dependencies": [],
+      "leads_to": ["Grafana"]
+    },
+    {
+      "id": 48,
+      "name": "Grafana",
+      "category": "Observability",
+      "icon": "fas fa-chart-pie",
+      "desc": "Visualization and analytics platform used to query, visualize and alert on metrics and logs. Pairs with Prometheus, Loki, and tracing providers to give an observability stack.",
+      "url": "https://grafana.com/",
+      "dependencies": ["Prometheus"],
+      "leads_to": []
+    },
+    {
+      "id": 49,
+      "name": "Event Sourcing",
+      "category": "System Design",
+      "icon": "fas fa-history",
+      "desc": "Modeling pattern where state changes are stored as a sequence of events. Enables audit logs, time-travel debugging, and rebuilding state; often paired with CQRS and message brokers.",
+      "url": "https://martinfowler.com/eaaDev/EventSourcing.html",
+      "dependencies": [],
+      "leads_to": ["Kafka", "CQRS"]
+    },
+    {
+      "id": 50,
+      "name": "WebTransport",
+      "category": "Realtime",
+      "icon": "fas fa-exchange-alt",
+      "desc": "A modern transport API built on QUIC for reliable and unreliable streams for web applications. Emerging tech for performant client-server real-time data with lower latency than TCP-based transports.",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebTransport",
+      "dependencies": [],
+      "leads_to": []
+    }
   ],
   "categories": [
     "Frontend",
-    "Backend", 
+    "Backend",
     "Database",
     "APIs",
     "Authentication",
@@ -413,6 +514,10 @@
     "Deployment",
     "Payment Systems",
     "Blockchain",
-    "AI / ML"
+    "AI / ML",
+    "Realtime",
+    "System Design",
+    "Observability",
+    "Messaging"
   ]
 }

@@ -16,6 +16,7 @@
   grid-template-columns: 1fr 2fr;
   gap: 3rem;
   margin-bottom: 2rem;
+  align-items: start;
 }
 
 .footer-brand {
@@ -78,6 +79,12 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
+
+/* Group and space link groups for touch targets */
+.link-group { padding: 0.5rem 0; }
+.link-group a { padding: 0.4rem 0; display: inline-block; }
+
+.footer-bottom { margin-top: 1rem; }
 
 .link-group h4 {
   color: #00ffff;

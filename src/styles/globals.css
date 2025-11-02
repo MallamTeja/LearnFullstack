@@ -15,7 +15,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  /* darker, modern navy gradient */
+  background: linear-gradient(135deg, #10182A 0%, #1f2937 50%, #111726 100%);
   background-attachment: fixed;
   color: #e2e8f0;
   line-height: 1.6;
@@ -31,9 +32,16 @@ body {
   --card-min-lg: 260px;
   --card-min-xl: 300px;
   --nav-height: 64px;
-  --accent: #6C63FF;
-  --bg-dark: #0f172a;
-  --muted: #94a3b8;
+  /* modern dark palette */
+  --bg-dark: #10182A;
+  --bg-mid: #1f2937;
+  --muted: #9CA3AF;
+  --primary-start: #1DB954; /* green accent */
+  --primary-end: #1899ff;   /* blue highlight */
+  --accent: #15e6c5;
+  --text-main: #fafbfd;
+  --cta-text: #fafbfd;
+  --section-gap: 4rem;
 }
 
 /* page container centered and constrained for larger screens */
@@ -202,6 +210,55 @@ button {
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
+
+/* Standardized CTA styles (accessible focus + active states) */
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 180ms ease, box-shadow 180ms ease, opacity 120ms ease;
+}
+
+.cta--primary {
+  background: linear-gradient(90deg, var(--primary-start), var(--primary-end));
+  color: var(--cta-text);
+  box-shadow: 0 12px 36px rgba(20, 30, 40, 0.45);
+}
+
+.cta--secondary {
+  background: transparent;
+  color: var(--primary-start);
+  border: 2px solid rgba(0,255,255,0.12);
+}
+
+.cta:focus {
+  outline: 3px solid rgba(100,255,218,0.12);
+  outline-offset: 3px;
+}
+
+.cta:active {
+  transform: translateY(1px) scale(0.995);
+  opacity: 0.98;
+}
+
+/* Section heading helper to strengthen hierarchy */
+.section-heading {
+  font-size: clamp(1.6rem, 2.2vw, 2.5rem);
+  margin-bottom: 1.5rem;
+  color: var(--text-main);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* prefer responsive vertical rhythm */
+.section { padding-block: clamp(2rem, 6vw, 4rem); }
+
+.section { padding: var(--section-gap) 0; }
 
 /* Utility Classes */
 .text-center {

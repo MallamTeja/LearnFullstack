@@ -16,6 +16,7 @@
   background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.95));
   position: relative;
   overflow: hidden;
+  padding-top: 3.5rem; /* add breathing room under fixed navbar */
 }
 
 .hero-section::before {
@@ -43,9 +44,9 @@
 .hero-headline {
   font-size: 3.5rem;
   font-weight: 800;
-  line-height: 1.1;
+  line-height: 1.05;
   color: #ffffff;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   font-family: 'Inter', sans-serif;
 }
 
@@ -58,7 +59,7 @@
 }
 
 .hero-subheadline {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   color: #94a3b8;
   line-height: 1.6;
   margin-bottom: 2rem;
@@ -71,46 +72,43 @@
 }
 
 .cta-primary {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 1rem 2rem;
-  background: linear-gradient(45deg, #00ffff, #64ffda);
-  color: #0f172a;
+  padding: 0.9rem 1.6rem;
+  background: linear-gradient(45deg, var(--primary-start, #00ffff), var(--primary-end, #64ffda));
+  color: var(--cta-text, #0f172a);
   border: none;
-  border-radius: 50px;
-  font-weight: 600;
+  border-radius: 999px;
+  font-weight: 700;
   font-size: 1rem;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: transform 180ms ease, box-shadow 180ms ease;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  box-shadow: 0 8px 30px rgba(0, 255, 255, 0.12);
 }
 
-.cta-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.4);
-}
+.cta-primary:focus { outline: 3px solid rgba(100,255,218,0.08); outline-offset: 3px; }
+
+.cta-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,255,255,0.14); }
 
 .cta-secondary {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 1rem 2rem;
+  padding: 0.85rem 1.4rem;
   background: transparent;
-  color: #00ffff;
-  border: 2px solid #00ffff;
-  border-radius: 50px;
-  font-weight: 600;
-  font-size: 1rem;
+  color: var(--primary-start, #00ffff);
+  border: 2px solid rgba(0,255,255,0.12);
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: transform 180ms ease, background 180ms ease;
 }
 
-.cta-secondary:hover {
-  background: rgba(0, 255, 255, 0.1);
-  transform: translateY(-2px);
-}
+.cta-secondary:hover { background: rgba(0,255,255,0.04); transform: translateY(-2px); }
 
 .hero-stats {
   display: flex;
