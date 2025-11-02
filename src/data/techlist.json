@@ -501,6 +501,107 @@
       "dependencies": [],
       "leads_to": []
     }
+    ,
+    {
+      "id": 51,
+      "name": "Svelte",
+      "category": "Frontend",
+      "icon": "fas fa-fire",
+      "desc": "A compiler-first UI framework that produces highly optimized vanilla JS. Great for lightweight apps with fast load times and minimal runtime overhead.",
+      "url": "https://svelte.dev/",
+      "dependencies": ["JavaScript"],
+      "leads_to": ["Sapper", "SvelteKit"]
+    },
+    {
+      "id": 52,
+      "name": "Astro",
+      "category": "Frontend",
+      "icon": "fas fa-meteor",
+      "desc": "Modern static-site builder focused on shipping less JavaScript by default. Works with multiple UI frameworks and is ideal for content-driven sites.",
+      "url": "https://astro.build/",
+      "dependencies": [],
+      "leads_to": ["Vite"]
+    },
+    {
+      "id": 53,
+      "name": "Storybook",
+      "category": "Frontend",
+      "icon": "fas fa-book-open",
+      "desc": "Component-driven development environment for building, testing, and documenting UI components in isolation. Essential for design systems.",
+      "url": "https://storybook.js.org/",
+      "dependencies": ["React", "Vue.js", "Svelte"],
+      "leads_to": []
+    },
+    {
+      "id": 54,
+      "name": "FastAPI",
+      "category": "Backend",
+      "icon": "fas fa-bolt",
+      "desc": "Modern, fast (high-performance) web framework for building APIs with Python 3.8+ based on standard Python type hints. Great for production APIs with automatic docs.",
+      "url": "https://fastapi.tiangolo.com/",
+      "dependencies": ["Python"],
+      "leads_to": ["OpenAPI", "Docker"]
+    },
+    {
+      "id": 55,
+      "name": "Terraform",
+      "category": "Cloud & DevOps",
+      "icon": "fas fa-cloud",
+      "desc": "Infrastructure as Code tool to provision and manage cloud resources declaratively across multiple providers. A core skill for reproducible infra.",
+      "url": "https://www.terraform.io/",
+      "dependencies": [],
+      "leads_to": ["AWS", "GCP", "Azure"]
+    },
+    {
+      "id": 56,
+      "name": "Jest",
+      "category": "Testing",
+      "icon": "fas fa-vial",
+      "desc": "Delightful JavaScript testing framework with a focus on simplicity. Widely used for unit and snapshot tests in React and Node projects.",
+      "url": "https://jestjs.io/",
+      "dependencies": ["JavaScript"],
+      "leads_to": ["React Testing Library"]
+    },
+    {
+      "id": 57,
+      "name": "Cypress",
+      "category": "Testing",
+      "icon": "fas fa-rocket",
+      "desc": "End-to-end testing tool for the modern web. Fast, reliable, and developer-friendly for testing user flows in the browser.",
+      "url": "https://www.cypress.io/",
+      "dependencies": ["JavaScript"],
+      "leads_to": []
+    },
+    {
+      "id": 58,
+      "name": "Auth0",
+      "category": "Authentication",
+      "icon": "fas fa-user-shield",
+      "desc": "Authentication and authorization-as-a-service. Simplifies login flows, social identity providers, and tokens so teams can focus on product.",
+      "url": "https://auth0.com/",
+      "dependencies": [],
+      "leads_to": ["OAuth 2.0", "JWT"]
+    },
+    {
+      "id": 59,
+      "name": "Serverless Functions",
+      "category": "Serverless",
+      "icon": "fas fa-bolt",
+      "desc": "Tiny single-purpose functions (AWS Lambda, Vercel/Netlify functions) that run on demand. Great for scaling APIs without managing servers.",
+      "url": "https://en.wikipedia.org/wiki/Serverless_computing",
+      "dependencies": [],
+      "leads_to": ["AWS Lambda", "Vercel"]
+    },
+    {
+      "id": 60,
+      "name": "Hugging Face",
+      "category": "AI / ML",
+      "icon": "fas fa-robot",
+      "desc": "A central hub for NLP and generative AI models, datasets, and tooling. Hugging Face simplifies using and deploying modern transformer models.",
+      "url": "https://huggingface.co/",
+      "dependencies": ["Python"],
+      "leads_to": ["PyTorch", "TensorFlow"]
+    }
   ],
   "categories": [
     "Frontend",
@@ -518,6 +619,8 @@
     "Realtime",
     "System Design",
     "Observability",
-    "Messaging"
+    "Messaging",
+    "Testing",
+    "Serverless"
   ]
 }

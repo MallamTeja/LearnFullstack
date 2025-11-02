@@ -20,6 +20,11 @@
   will-change: transform;
 }
 
+/* class-based flip (used by touch/click) */
+.card-inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
 /* Only perform hover-based flip on devices that support hover and fine pointer (desktop/laptop) */
 @media (hover: hover) and (pointer: fine) {
   .tech-card:hover .card-inner {

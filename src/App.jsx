@@ -43,11 +43,21 @@ function App() {
 
     // Filter by search term
     if (searchTerm) {
-      filtered = filtered.filter(tech =>
-        tech.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        tech.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        tech.category.toLowerCase().includes(searchTerm.toLowerCase())
-      );
+      const q = searchTerm.toLowerCase();
+      filtered = filtered.filter((tech) => {
+        // name, short description (desc), category
+        const nameMatch = tech.name && tech.name.toLowerCase().includes(q);
+        const descMatch = tech.desc && tech.desc.toLowerCase().includes(q);
+        const categoryMatch = tech.category && tech.category.toLowerCase().includes(q);
+
+        // dependencies and leads_to arrays
+        const deps = Array.isArray(tech.dependencies) ? tech.dependencies.join(' ').toLowerCase() : '';
+        const leads = Array.isArray(tech.leads_to) ? tech.leads_to.join(' ').toLowerCase() : '';
+        const depsMatch = deps.includes(q);
+        const leadsMatch = leads.includes(q);
+
+        return nameMatch || descMatch || categoryMatch || depsMatch || leadsMatch;
+      });
     }
 
     setFilteredTechnologies(filtered);
@@ -86,7 +96,6 @@ function App() {
                 </p>
               </motion.div>
 
-              <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
               <CategorySelector
                 categories={techData.categories}
                 selectedCategory={selectedCategory}
@@ -108,6 +117,12 @@ function App() {
   return (
     <div className="App">
       <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
+      {/* Global search available on all pages */}
+      <div style={{ paddingTop: '80px' }}>
+        <div className="container">
+          <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+        </div>
+      </div>
       
       <AnimatePresence mode="wait">
         {renderPage()}
