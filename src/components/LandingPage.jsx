@@ -29,13 +29,13 @@ const LandingPage = ({ setCurrentPage }) => {
 
   return (
     <div className="landing-page">
-      <HeroSection />
+      <HeroSection setCurrentPage={setCurrentPage} />
       <AboutSection />
       <HowItWorks />
       <PreviewSection />
 
       {/* Problem Section */}
-      <section className="problem-section">
+      <section className="problem-section"        <div className="section-glow" aria-hidden></div>
         <div className="container">
           <motion.div 
             className="problem-content"
@@ -68,6 +68,7 @@ const LandingPage = ({ setCurrentPage }) => {
 
       {/* Solution Section */}
       <section className="solution-section">
+        <div className="section-glow" aria-hidden></div>
         <div className="container">
           <motion.div 
             className="solution-content"
@@ -228,6 +229,7 @@ const LandingPage = ({ setCurrentPage }) => {
 
       {/* Features Section */}
       <section id="features" className="features-section">
+        <div className="section-glow" aria-hidden></div>
         <div className="container">
           <motion.div 
             className="features-header"

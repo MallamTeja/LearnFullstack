@@ -2,12 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import './HeroSection.css';
 
-const HeroSection = () => {
+const HeroSection = ({ setCurrentPage }) => {
   const handleCTA = () => {
-    // Scroll to skills section
-    const skillsSection = document.getElementById('skills');
-    if (skillsSection) {
-      skillsSection.scrollIntoView({ behavior: 'smooth' });
+    // Navigate directly to frontend page
+    if (setCurrentPage) {
+      setCurrentPage('frontend');
     }
   };
 
@@ -30,7 +29,7 @@ const HeroSection = () => {
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
               onClick={handleCTA}
-              aria-label="Take a Look"
+              aria-label="Explore Frontend Technologies"
             >
               Take a Look
             </motion.button>

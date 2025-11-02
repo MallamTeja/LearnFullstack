@@ -220,7 +220,7 @@ const TechTree = () => {
     const relatedNodeIds = getRelatedNodes(category);
     const filteredEdgeData = getFilteredEdges(relatedNodeIds);
     const relevantNodes = treeData.nodes.filter(node => relatedNodeIds.includes(node.id));
-    const positionedNodes = calculateAutoLayout(relevantNodes, category);
+    const positionedNodes = calculateOrganizedLayout(relevantNodes, category);
     
     // Create organized nodes
     // Create nodes with organized positions and enhanced styling
@@ -256,33 +256,34 @@ const TechTree = () => {
       },
     }));
 
-    // Create cleaner edges
+    // Create enhanced edges with better organization
     const updatedEdges = filteredEdgeData.map((edge) => ({
       id: edge.id,
       source: edge.source,
       target: edge.target,
       type: 'smoothstep',
-      animated: false,
+      animated: category !== 'All' && filteredEdgeData.length < 15,
       style: {
         stroke: getEdgeColor(edge.type),
-        strokeWidth: 2,
+        strokeWidth: category === 'All' ? 2 : 2.5,
         strokeOpacity: category === 'All' ? 0.5 : 0.8,
+        strokeDasharray: edge.type === 'integration' ? '5,5' : '0',
       },
       markerEnd: {
         type: 'arrowclosed',
         color: getEdgeColor(edge.type),
-        width: 12,
-        height: 12,
+        width: category === 'All' ? 12 : 16,
+        height: category === 'All' ? 12 : 16,
       },
-      label: category !== 'All' ? getEdgeLabel(edge.type) : '',
+      label: category !== 'All' && filteredEdgeData.length < 20 ? getEdgeLabel(edge.type) : '',
       labelStyle: {
         fontSize: '9px',
-        fontWeight: '600',
+        fontWeight: '500',
         color: getEdgeColor(edge.type),
       },
       labelBgStyle: {
-        fill: 'rgba(15, 23, 42, 0.9)',
-        fillOpacity: 0.9,
+        fill: 'rgba(15, 23, 42, 0.95)',
+        fillOpacity: 0.95,
         rx: 4,
         ry: 4,
       },
@@ -311,9 +312,21 @@ const TechTree = () => {
           <h1 style={{ fontSize: '3rem', marginBottom: '1rem', color: '#ffffff' }}>
             Technology Dependency Tree
           </h1>
-          <p style={{ fontSize: '1.2rem', color: '#94a3b8', maxWidth: '600px', margin: '0 auto 2rem' }}>
+          <p style={{ fontSize: '1.2rem', color: '#94a3b8', maxWidth: '600px', margin: '0 auto 1rem' }}>
             Visualize how technologies connect and build upon each other in modern development
           </p>
+          <div style={{ 
+            background: 'rgba(0, 255, 255, 0.1)', 
+            border: '1px solid rgba(0, 255, 255, 0.3)', 
+            borderRadius: '8px', 
+            padding: '0.8rem 1.5rem', 
+            margin: '0 auto 2rem',
+            maxWidth: '500px',
+            fontSize: '0.9rem',
+            color: '#64ffda'
+          }}>
+            💡 <strong>Organized View:</strong> Technologies are now grouped by category with improved spacing and visual hierarchy
+          </div>
         </motion.div>
 
         {/* Category Filter */}
@@ -369,7 +382,24 @@ const TechTree = () => {
             />
             <Panel position="top-right">
               <div className="legend">
-                <h4>Relationship Types</h4>
+                <h4>Organization Info</h4>
+                <div className="legend-stats">
+                  <div className="stat-item">
+                    <span className="stat-label">Technologies:</span>
+                    <span className="stat-value">{nodes.length}</span>
+                  </div>
+                  <div className="stat-item">
+                    <span className="stat-label">Connections:</span>
+                    <span className="stat-value">{edges.length}</span>
+                  </div>
+                  {selectedCategory !== 'All' && (
+                    <div className="stat-item">
+                      <span className="stat-label">Category:</span>
+                      <span className="stat-value">{selectedCategory}</span>
+                    </div>
+                  )}
+                </div>
+                <h4 style={{ marginTop: '1rem' }}>Relationship Types</h4>
                 <div className="legend-item">
                   <div className="legend-line" style={{backgroundColor: '#00ffff'}}></div>
                   <span>Prerequisite</span>
@@ -384,11 +414,11 @@ const TechTree = () => {
                 </div>
                 <div className="legend-item">
                   <div className="legend-line" style={{backgroundColor: '#3b82f6'}}></div>
-                  <span>Containerization</span>
+                  <span>Container</span>
                 </div>
                 <div className="legend-item">
                   <div className="legend-line" style={{backgroundColor: '#8b5cf6'}}></div>
-                  <span>Realtime/SDK</span>
+                  <span>Realtime</span>
                 </div>
                 <div className="legend-item">
                   <div className="legend-line" style={{backgroundColor: '#6366f1'}}></div>

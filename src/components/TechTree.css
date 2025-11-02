@@ -78,6 +78,29 @@
   font-size: 14px;
 }
 
+.legend-stats {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 12px;
+}
+
+.stat-label {
+  color: #94a3b8;
+}
+
+.stat-value {
+  color: #00ffff;
+  font-weight: 600;
+}
+
 .legend-item {
   display: flex;
   align-items: center;
@@ -228,6 +251,62 @@
   font-weight: 500 !important;
   backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Category Organization Enhancements */
+.react-flow__viewport {
+  transition: transform 0.3s ease;
+}
+
+/* Category Headers (when showing specific categories) */
+.category-header {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 255, 255, 0.1);
+  color: #00ffff;
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid #00ffff;
+  font-size: 12px;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  pointer-events: none;
+}
+
+/* Enhanced node grouping visual cues */
+.react-flow__node-default.category-frontend {
+  box-shadow: 0 0 20px rgba(97, 218, 251, 0.3) !important;
+}
+
+.react-flow__node-default.category-backend {
+  box-shadow: 0 0 20px rgba(51, 153, 51, 0.3) !important;
+}
+
+.react-flow__node-default.category-database {
+  box-shadow: 0 0 20px rgba(51, 103, 145, 0.3) !important;
+}
+
+.react-flow__node-default.category-devops {
+  box-shadow: 0 0 20px rgba(36, 150, 237, 0.3) !important;
+}
+
+/* Improved connection visualization */
+.react-flow__edge.edge-prerequisite .react-flow__edge-path {
+  stroke: #00ffff !important;
+  stroke-width: 2.5px !important;
+}
+
+.react-flow__edge.edge-integration .react-flow__edge-path {
+  stroke: #10b981 !important;
+  stroke-dasharray: 5,5 !important;
+}
+
+.react-flow__edge.edge-deployment .react-flow__edge-path {
+  stroke: #f59e0b !important;
+  stroke-width: 3px !important;
 }
 
 /* Mobile Responsiveness */

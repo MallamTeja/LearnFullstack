@@ -2,11 +2,61 @@
   min-height: 100vh;
 }
 
+:root {
+  --bg: #0b1324;
+  --card: rgba(16, 24, 42, 0.75);
+  --muted: #9CA3AF;
+  --text: #e2e8f0;
+  --heading: #fafbfd;
+  --accent: #00ffff;
+  --accent-2: #64ffda;
+  --ring: rgba(0, 255, 255, 0.15);
+}
+
+/* Section base styles */
+section {
+  position: relative;
+}
+
+section .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Soft section dividers */
+section::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: min(92%, 1200px);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+  opacity: 0.5;
+}
+
+/* Subtle background glow accents */
+.section-glow {
+  position: absolute;
+  inset: -20% -10% auto -10%;
+  height: 60%;
+  filter: blur(60px);
+  background: radial-gradient(60% 60% at 30% 40%, rgba(0,255,255,0.12) 0%, transparent 60%),
+              radial-gradient(50% 50% at 80% 20%, rgba(100,255,218,0.12) 0%, transparent 60%);
+  pointer-events: none;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
 }
+
+/* spacing scale for vertical rhythm */
+.section-pad-sm { padding: 2rem 0; }
+.section-pad-md { padding: 3rem 0; }
+.section-pad-lg { padding: 5rem 0; }
 
 /* Hero Section */
 .hero-section {
@@ -168,16 +218,17 @@
 
 /* Problem Section */
 .problem-section {
-  padding: 3rem 0;
-  background: rgba(15, 23, 42, 0.5);
+  padding: 4rem 0;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.5));
 }
 
 .problem-content h2 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: #ffffff;
   text-align: center;
   margin-bottom: 2rem;
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: -0.015em;
 }
 
 .problems-grid {
@@ -232,16 +283,19 @@
 
 /* Solution Section */
 .solution-section {
-  padding: 3rem 0;
-  background: linear-gradient(135deg, rgba(6, 78, 59, 0.2), rgba(5, 46, 22, 0.2));
+  padding: 4rem 0;
+  background: linear-gradient(135deg, rgba(6, 78, 59, 0.25), rgba(5, 46, 22, 0.25));
 }
 
+.solution-section .section-glow { inset: -10% -10% auto -10%; height: 40%; }
+
 .solution-content h2 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: #ffffff;
   text-align: center;
   margin-bottom: 1rem;
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: -0.015em;
 }
 
 .solution-description {
@@ -502,7 +556,7 @@
 
 /* Skills Section */
 .skills-section {
-  padding: 3rem 0;
+  padding: 4rem 0;
   background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.90));
 }
 
@@ -539,12 +593,12 @@
 
 .skill-category-card {
   background: rgba(30, 41, 59, 0.8);
-  border: 2px solid rgba(0, 255, 255, 0.2);
-  border-radius: 20px;
-  padding: 2rem;
+  border: 1px solid rgba(0, 255, 255, 0.18);
+  border-radius: 22px;
+  padding: 2.25rem;
   text-align: center;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   backdrop-filter: blur(10px);
   position: relative;
   overflow: hidden;
@@ -650,16 +704,17 @@
 
 /* Features Section */
 .features-section {
-  padding: 3rem 0;
-  background: rgba(15, 23, 42, 0.8);
+  padding: 4rem 0;
+  background: rgba(15, 23, 42, 0.85);
 }
 
 .features-header h2 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: #ffffff;
   text-align: center;
-  margin-bottom: 2rem;
-  font-weight: 700;
+  margin-bottom: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.015em;
 }
 
 .features-grid {
@@ -671,12 +726,12 @@
 }
 
 .feature-card {
-  padding: 1.25rem;
+  padding: 1.5rem;
   background: rgba(16, 24, 42, 0.75);
-  border: 1px solid rgba(29, 185, 84, 0.08);
-  border-radius: 14px;
+  border: 1px solid rgba(29, 185, 84, 0.12);
+  border-radius: 16px;
   text-align: center;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 5px 18px rgba(2, 6, 23, 0.5);
@@ -725,16 +780,17 @@
 
 /* Social Proof Section */
 .social-proof-section {
-  padding: 3rem 0;
-  background: linear-gradient(135deg, rgba(30, 41, 59, 0.5), rgba(15, 23, 42, 0.5));
+  padding: 4rem 0;
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.55), rgba(15, 23, 42, 0.5));
 }
 
 .social-proof-content h2 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: #ffffff;
   text-align: center;
   margin-bottom: 2rem;
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: -0.015em;
 }
 
 .testimonials-grid {
@@ -745,11 +801,17 @@
 }
 
 .testimonial {
-  padding: 1.25rem;
+  padding: 1.5rem;
   background: rgba(30, 41, 59, 0.8);
-  border: 1px solid rgba(100, 255, 218, 0.2);
-  border-radius: 14px;
+  border: 1px solid rgba(100, 255, 218, 0.24);
+  border-radius: 16px;
   backdrop-filter: blur(10px);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(2, 6, 23, 0.7), 0 8px 25px rgba(100, 255, 218, 0.12);
 }
 
 .testimonial-content p {
@@ -792,6 +854,7 @@
   color: #94a3b8;
   margin-bottom: 1.25rem;
   font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 .logos-grid {
@@ -811,8 +874,8 @@
 
 /* Final CTA Section */
 .final-cta-section {
-  padding: 3rem 0;
-  background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(100, 255, 218, 0.1));
+  padding: 4rem 0;
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.12), rgba(100, 255, 218, 0.12));
 }
 
 .cta-content {
@@ -822,10 +885,11 @@
 }
 
 .cta-content h2 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: #ffffff;
   margin-bottom: 1rem;
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: -0.015em;
 }
 
 .cta-content p {
@@ -845,12 +909,12 @@
 
 .email-signup input {
   flex: 1;
-  padding: 0.65rem 1rem;
+  padding: 0.8rem 1.1rem;
   background: rgba(30, 41, 59, 0.8);
   border: 1px solid rgba(0, 255, 255, 0.3);
   border-radius: 50px;
   color: #ffffff;
-  font-size: 0.95rem;
+  font-size: 1rem;
   outline: none;
 }
 
@@ -880,6 +944,7 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  section::after { width: 92%; }
   .hero-container {
     grid-template-columns: 1fr;
     text-align: center;
