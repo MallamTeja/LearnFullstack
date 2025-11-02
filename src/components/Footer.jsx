@@ -14,7 +14,9 @@ const Footer = () => {
             </div>
             <p>Interactive guide to modern development technologies</p>
             <div className="social-links">
-              <a href="#" aria-label="GitHub"><i className="fab fa-github"></i></a>
+              <a href="https://github.com/devpathstack/devpathstack" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i className="fab fa-github"></i>
+              </a>
               <a href="#" aria-label="Twitter"><i className="fab fa-twitter"></i></a>
               <a href="#" aria-label="LinkedIn"><i className="fab fa-linkedin"></i></a>
               <a href="#" aria-label="Discord"><i className="fab fa-discord"></i></a>

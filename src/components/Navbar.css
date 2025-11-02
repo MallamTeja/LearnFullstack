@@ -22,14 +22,30 @@
 
 .nav-brand {
   display: flex;
-  align-items: center;
-  gap: 0.8rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
   cursor: pointer;
   font-family: 'JetBrains Mono', monospace;
   font-size: 1.5rem;
   font-weight: 700;
   color: #00ffff;
   text-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.nav-brand > div {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.tagline {
+  font-size: 0.7rem !important;
+  color: #94a3b8 !important;
+  font-weight: 400 !important;
+  font-style: italic;
+  text-shadow: none !important;
+  margin-top: -2px;
 }
 
 .nav-brand i {

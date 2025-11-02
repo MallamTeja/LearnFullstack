@@ -1,0 +1,188 @@
+{
+  "nodes": [
+    {
+      "id": "html5",
+      "name": "HTML5",
+      "category": "Frontend",
+      "level": 1,
+      "position": { "x": 100, "y": 100 },
+      "color": "#e34c26"
+    },
+    {
+      "id": "css3",
+      "name": "CSS3",
+      "category": "Frontend", 
+      "level": 1,
+      "position": { "x": 300, "y": 100 },
+      "color": "#1572b6"
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "category": "Frontend",
+      "level": 2,
+      "position": { "x": 200, "y": 200 },
+      "color": "#f7df1e"
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "category": "Frontend",
+      "level": 3,
+      "position": { "x": 100, "y": 300 },
+      "color": "#61dafb"
+    },
+    {
+      "id": "vue",
+      "name": "Vue.js",
+      "category": "Frontend",
+      "level": 3,
+      "position": { "x": 300, "y": 300 },
+      "color": "#4fc08d"
+    },
+    {
+      "id": "nodejs",
+      "name": "Node.js",
+      "category": "Backend",
+      "level": 3,
+      "position": { "x": 500, "y": 200 },
+      "color": "#339933"
+    },
+    {
+      "id": "express",
+      "name": "Express.js",
+      "category": "Backend",
+      "level": 4,
+      "position": { "x": 500, "y": 300 },
+      "color": "#000000"
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB",
+      "category": "Database",
+      "level": 4,
+      "position": { "x": 400, "y": 400 },
+      "color": "#47a248"
+    },
+    {
+      "id": "postgresql",
+      "name": "PostgreSQL",
+      "category": "Database",
+      "level": 4,
+      "position": { "x": 600, "y": 400 },
+      "color": "#336791"
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "category": "DevOps",
+      "level": 5,
+      "position": { "x": 300, "y": 500 },
+      "color": "#2496ed"
+    },
+    {
+      "id": "aws",
+      "name": "AWS",
+      "category": "Cloud",
+      "level": 5,
+      "position": { "x": 500, "y": 500 },
+      "color": "#ff9900"
+    },
+    {
+      "id": "vercel",
+      "name": "Vercel",
+      "category": "Deployment",
+      "level": 6,
+      "position": { "x": 200, "y": 600 },
+      "color": "#000000"
+    },
+    {
+      "id": "netlify",
+      "name": "Netlify",
+      "category": "Deployment",
+      "level": 6,
+      "position": { "x": 400, "y": 600 },
+      "color": "#00c7b7"
+    }
+  ],
+  "edges": [
+    {
+      "id": "html-css",
+      "source": "html5",
+      "target": "css3",
+      "type": "prerequisite"
+    },
+    {
+      "id": "html-js",
+      "source": "html5",
+      "target": "javascript",
+      "type": "prerequisite"
+    },
+    {
+      "id": "css-js",
+      "source": "css3",
+      "target": "javascript",
+      "type": "prerequisite"
+    },
+    {
+      "id": "js-react",
+      "source": "javascript",
+      "target": "react",
+      "type": "prerequisite"
+    },
+    {
+      "id": "js-vue",
+      "source": "javascript",
+      "target": "vue",
+      "type": "prerequisite"
+    },
+    {
+      "id": "js-node",
+      "source": "javascript",
+      "target": "nodejs",
+      "type": "prerequisite"
+    },
+    {
+      "id": "node-express",
+      "source": "nodejs",
+      "target": "express",
+      "type": "prerequisite"
+    },
+    {
+      "id": "express-mongo",
+      "source": "express",
+      "target": "mongodb",
+      "type": "integration"
+    },
+    {
+      "id": "express-postgres",
+      "source": "express",
+      "target": "postgresql",
+      "type": "integration"
+    },
+    {
+      "id": "react-vercel",
+      "source": "react",
+      "target": "vercel",
+      "type": "deployment"
+    },
+    {
+      "id": "vue-netlify",
+      "source": "vue",
+      "target": "netlify",
+      "type": "deployment"
+    },
+    {
+      "id": "express-docker",
+      "source": "express",
+      "target": "docker",
+      "type": "containerization"
+    },
+    {
+      "id": "docker-aws",
+      "source": "docker",
+      "target": "aws",
+      "type": "deployment"
+    }
+  ]
+}

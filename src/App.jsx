@@ -9,6 +9,7 @@ import LandingPage from './components/LandingPage';
 import SearchBar from './components/SearchBar';
 import CategorySelector from './components/CategorySelector';
 import TechGrid from './components/TechGrid';
+import TechTree from './components/TechTree';
 import Footer from './components/Footer';
 
 // Data
@@ -97,54 +98,7 @@ function App() {
         );
 
       case 'techtree':
-        return (
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -30 }}
-            transition={{ duration: 0.5 }}
-            style={{ paddingTop: '90px', minHeight: '100vh' }}
-          >
-            <div className="container">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="page-header"
-                style={{ textAlign: 'center', padding: '3rem 0' }}
-              >
-                <h1 style={{ fontSize: '3rem', marginBottom: '1rem', color: '#ffffff' }}>
-                  Technology Dependency Tree
-                </h1>
-                <p style={{ fontSize: '1.2rem', color: '#94a3b8', maxWidth: '600px', margin: '0 auto' }}>
-                  Visualize how technologies connect and build upon each other
-                </p>
-              </motion.div>
-              
-              <div style={{ 
-                background: 'rgba(30, 41, 59, 0.8)', 
-                borderRadius: '20px', 
-                padding: '3rem', 
-                textAlign: 'center',
-                border: '1px solid rgba(0, 255, 255, 0.2)'
-              }}>
-                <i className="fas fa-project-diagram" style={{ fontSize: '4rem', color: '#64ffda', marginBottom: '2rem' }}></i>
-                <h3 style={{ marginBottom: '1rem', color: '#ffffff' }}>Interactive Tech Tree Coming Soon!</h3>
-                <p style={{ color: '#94a3b8', marginBottom: '2rem' }}>
-                  We're building an interactive visualization that will show you exactly how technologies connect and depend on each other.
-                </p>
-                <button 
-                  className="btn-primary" 
-                  style={{ padding: '1rem 2rem', borderRadius: '50px' }}
-                  onClick={() => setCurrentPage('home')}
-                >
-                  <i className="fas fa-home"></i>
-                  Back to Home
-                </button>
-              </div>
-            </div>
-          </motion.div>
-        );
+        return <TechTree />;
 
       default:
         return <LandingPage />;

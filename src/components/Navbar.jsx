@@ -21,8 +21,11 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
     >
       <div className="nav-container">
         <div className="nav-brand" onClick={() => setCurrentPage('home')}>
-          <i className="fas fa-code"></i>
-          <span>DevPathStack</span>
+          <div>
+            <i className="fas fa-code"></i>
+            <span>DevPathStack</span>
+          </div>
+          <small className="tagline">Where confused devs get unconfused</small>
         </div>
         
         <div className="nav-menu">
