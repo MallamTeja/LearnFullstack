@@ -4,603 +4,790 @@
       "id": 1,
       "name": "HTML5",
       "category": "Frontend",
-      "icon": "fab fa-html5",
       "desc": "The backbone of web content. Semantic markup that structures your digital masterpiece.",
       "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
       "dependencies": [],
-      "leads_to": ["CSS3", "JavaScript"]
+      "leads_to": [
+        "CSS3",
+        "JavaScript"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
     },
     {
       "id": 2,
       "name": "CSS3",
       "category": "Frontend",
-      "icon": "fab fa-css3-alt",
       "desc": "Make it pretty! The magic wand that transforms bland HTML into stunning visual experiences.",
       "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
-      "dependencies": ["HTML5"],
-      "leads_to": ["Sass", "Tailwind CSS", "Bootstrap"]
+      "dependencies": [
+        "HTML5"
+      ],
+      "leads_to": [
+        "Sass",
+        "Tailwind CSS",
+        "Bootstrap"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
     },
     {
       "id": 3,
       "name": "JavaScript",
       "category": "Frontend",
-      "icon": "fab fa-js-square",
       "desc": "The soul of web interactivity. From simple clicks to complex applications - JS does it all!",
       "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-      "dependencies": ["HTML5"],
-      "leads_to": ["React", "Vue.js", "Node.js", "TypeScript"]
+      "dependencies": [
+        "HTML5"
+      ],
+      "leads_to": [
+        "React",
+        "Vue.js",
+        "Node.js",
+        "TypeScript"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
     },
     {
       "id": 4,
       "name": "React",
       "category": "Frontend",
-      "icon": "fab fa-react",
       "desc": "Component-based UI library that makes building interactive UIs as satisfying as LEGO blocks!",
       "url": "https://reactjs.org/",
-      "dependencies": ["JavaScript"],
-      "leads_to": ["Next.js", "React Native", "Redux"]
+      "dependencies": [
+        "JavaScript"
+      ],
+      "leads_to": [
+        "Next.js",
+        "React Native",
+        "Redux"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
     },
     {
       "id": 5,
       "name": "Vue.js",
       "category": "Frontend",
-      "icon": "fab fa-vuejs",
       "desc": "Progressive framework that's approachable, versatile, and performant. Vue makes frontend fun!",
       "url": "https://vuejs.org/",
-      "dependencies": ["JavaScript"],
-      "leads_to": ["Nuxt.js", "Vuex"]
+      "dependencies": [
+        "JavaScript"
+      ],
+      "leads_to": [
+        "Nuxt.js",
+        "Vuex"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
     },
     {
       "id": 6,
       "name": "Angular",
       "category": "Frontend",
-      "icon": "fab fa-angular",
       "desc": "Full-featured framework for ambitious web apps. TypeScript-first and enterprise-ready!",
       "url": "https://angular.io/",
-      "dependencies": ["JavaScript", "TypeScript"],
-      "leads_to": ["RxJS", "Angular Material"]
+      "dependencies": [
+        "JavaScript",
+        "TypeScript"
+      ],
+      "leads_to": [
+        "RxJS",
+        "Angular Material"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
     },
     {
       "id": 7,
       "name": "TypeScript",
       "category": "Frontend",
-      "icon": "fas fa-code",
       "desc": "JavaScript's sophisticated cousin. Type safety that catches bugs before they catch you!",
       "url": "https://www.typescriptlang.org/",
-      "dependencies": ["JavaScript"],
-      "leads_to": ["Angular", "React", "Node.js"]
+      "dependencies": [
+        "JavaScript"
+      ],
+      "leads_to": [
+        "Angular",
+        "React",
+        "Node.js"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
     },
     {
       "id": 8,
       "name": "Sass/SCSS",
       "category": "Frontend",
-      "icon": "fab fa-sass",
       "desc": "CSS with superpowers! Variables, nesting, and mixins make styling a breeze.",
       "url": "https://sass-lang.com/",
-      "dependencies": ["CSS3"],
-      "leads_to": []
+      "dependencies": [
+        "CSS3"
+      ],
+      "leads_to": [],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
     },
     {
       "id": 9,
       "name": "Tailwind CSS",
       "category": "Frontend",
-      "icon": "fas fa-wind",
       "desc": "Utility-first CSS framework. Build beautiful designs without leaving your HTML!",
       "url": "https://tailwindcss.com/",
-      "dependencies": ["CSS3"],
-      "leads_to": []
+      "dependencies": [
+        "CSS3"
+      ],
+      "leads_to": [],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
     },
     {
       "id": 10,
       "name": "Bootstrap",
       "category": "Frontend",
-      "icon": "fab fa-bootstrap",
       "desc": "Responsive grid system and pre-built components. Rapid prototyping made simple!",
       "url": "https://getbootstrap.com/",
-      "dependencies": ["CSS3"],
-      "leads_to": []
+      "dependencies": [
+        "CSS3"
+      ],
+      "leads_to": [],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
     },
     {
       "id": 11,
       "name": "Node.js",
       "category": "Backend",
-      "icon": "fab fa-node-js",
       "desc": "JavaScript on the server! Event-driven, non-blocking I/O that scales beautifully.",
       "url": "https://nodejs.org/",
-      "dependencies": ["JavaScript"],
-      "leads_to": ["Express.js", "NestJS", "Socket.io"]
+      "dependencies": [
+        "JavaScript"
+      ],
+      "leads_to": [
+        "Express.js",
+        "NestJS",
+        "Socket.io"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
     },
     {
       "id": 12,
       "name": "Express.js",
       "category": "Backend",
-      "icon": "fas fa-server",
       "desc": "Minimalist web framework for Node.js. Fast, unopinionated, and flexible!",
       "url": "https://expressjs.com/",
-      "dependencies": ["Node.js"],
-      "leads_to": ["MongoDB", "PostgreSQL", "Authentication"]
+      "dependencies": [
+        "Node.js"
+      ],
+      "leads_to": [
+        "MongoDB",
+        "PostgreSQL",
+        "Authentication"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
     },
     {
       "id": 13,
       "name": "Python",
       "category": "Backend",
-      "icon": "fab fa-python",
       "desc": "Readable, versatile, powerful. From web apps to AI - Python does it elegantly!",
       "url": "https://www.python.org/",
       "dependencies": [],
-      "leads_to": ["Django", "Flask", "FastAPI"]
+      "leads_to": [
+        "Django",
+        "Flask",
+        "FastAPI"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
     },
     {
       "id": 14,
       "name": "Django",
       "category": "Backend",
-      "icon": "fas fa-code-branch",
       "desc": "The web framework for perfectionists with deadlines. Batteries included!",
       "url": "https://www.djangoproject.com/",
-      "dependencies": ["Python"],
-      "leads_to": ["PostgreSQL", "Redis"]
+      "dependencies": [
+        "Python"
+      ],
+      "leads_to": [
+        "PostgreSQL",
+        "Redis"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
     },
     {
       "id": 15,
       "name": "Flask",
       "category": "Backend",
-      "icon": "fas fa-flask",
       "desc": "Micro framework with macro possibilities. Lightweight and extensible!",
       "url": "https://flask.palletsprojects.com/",
-      "dependencies": ["Python"],
-      "leads_to": ["SQLAlchemy", "MongoDB"]
+      "dependencies": [
+        "Python"
+      ],
+      "leads_to": [
+        "SQLAlchemy",
+        "MongoDB"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
     },
     {
       "id": 16,
       "name": "MongoDB",
       "category": "Database",
-      "icon": "fas fa-leaf",
       "desc": "Document-oriented NoSQL database. Flexible schemas for modern applications!",
       "url": "https://www.mongodb.com/",
       "dependencies": [],
-      "leads_to": ["Mongoose", "Atlas"]
+      "leads_to": [
+        "Mongoose",
+        "Atlas"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
     },
     {
       "id": 17,
       "name": "PostgreSQL",
       "category": "Database",
-      "icon": "fas fa-database",
       "desc": "Advanced open-source relational database. ACID compliance meets JSON flexibility!",
       "url": "https://www.postgresql.org/",
       "dependencies": [],
-      "leads_to": ["Prisma", "Sequelize"]
+      "leads_to": [
+        "Prisma",
+        "Sequelize"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
     },
     {
       "id": 18,
       "name": "MySQL",
       "category": "Database",
-      "icon": "fas fa-database",
       "desc": "World's most popular open-source database. Reliable, fast, and battle-tested!",
       "url": "https://www.mysql.com/",
       "dependencies": [],
-      "leads_to": ["Sequelize", "TypeORM"]
+      "leads_to": [
+        "Sequelize",
+        "TypeORM"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
     },
     {
       "id": 19,
       "name": "Redis",
       "category": "Database",
-      "icon": "fas fa-memory",
       "desc": "In-memory data structure store. Caching, sessions, and real-time analytics!",
       "url": "https://redis.io/",
       "dependencies": [],
-      "leads_to": []
+      "leads_to": [],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
     },
     {
       "id": 20,
       "name": "REST API",
       "category": "APIs",
-      "icon": "fas fa-exchange-alt",
       "desc": "Representational State Transfer. Clean, stateless communication between systems!",
       "url": "https://restfulapi.net/",
-      "dependencies": ["HTTP"],
-      "leads_to": ["GraphQL", "OpenAPI"]
+      "dependencies": [
+        "HTTP"
+      ],
+      "leads_to": [
+        "GraphQL",
+        "OpenAPI"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/http/http-original.svg"
     },
     {
       "id": 21,
       "name": "GraphQL",
       "category": "APIs",
-      "icon": "fas fa-project-diagram",
       "desc": "Query language for APIs. Ask for exactly what you need, nothing more!",
       "url": "https://graphql.org/",
       "dependencies": [],
-      "leads_to": ["Apollo", "Relay"]
+      "leads_to": [
+        "Apollo",
+        "Relay"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg"
     },
     {
       "id": 22,
       "name": "Socket.io",
       "category": "APIs",
-      "icon": "fas fa-plug",
       "desc": "Real-time bidirectional event-based communication. WebSockets made simple!",
       "url": "https://socket.io/",
-      "dependencies": ["Node.js"],
-      "leads_to": []
+      "dependencies": [
+        "Node.js"
+      ],
+      "leads_to": [],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg"
     },
     {
       "id": 23,
       "name": "JWT",
       "category": "Authentication",
-      "icon": "fas fa-key",
       "desc": "JSON Web Tokens for secure information transmission. Stateless authentication magic!",
       "url": "https://jwt.io/",
       "dependencies": [],
-      "leads_to": ["OAuth", "Auth0"]
+      "leads_to": [
+        "OAuth",
+        "Auth0"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jwt/jwt-plain.svg"
     },
     {
       "id": 24,
       "name": "OAuth 2.0",
       "category": "Authentication",
-      "icon": "fas fa-shield-alt",
       "desc": "Industry-standard authorization framework. Secure third-party access control!",
       "url": "https://oauth.net/2/",
       "dependencies": [],
-      "leads_to": ["OpenID Connect"]
+      "leads_to": [
+        "OpenID Connect"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oauth/oauth-plain.svg"
     },
     {
       "id": 25,
       "name": "AWS",
       "category": "Cloud & DevOps",
-      "icon": "fab fa-aws",
       "desc": "Amazon's comprehensive cloud platform. From storage to AI - scale globally!",
       "url": "https://aws.amazon.com/",
       "dependencies": [],
-      "leads_to": ["EC2", "S3", "Lambda"]
+      "leads_to": [
+        "EC2",
+        "S3",
+        "Lambda"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"
     },
     {
       "id": 26,
       "name": "Docker",
       "category": "Cloud & DevOps",
-      "icon": "fab fa-docker",
       "desc": "Containerization platform. Package your app with all dependencies - run anywhere!",
       "url": "https://www.docker.com/",
       "dependencies": [],
-      "leads_to": ["Kubernetes", "Docker Compose"]
+      "leads_to": [
+        "Kubernetes",
+        "Docker Compose"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
     },
     {
       "id": 27,
       "name": "Kubernetes",
       "category": "Cloud & DevOps",
-      "icon": "fas fa-dharmachakra",
       "desc": "Container orchestration system. Automate deployment, scaling, and management!",
       "url": "https://kubernetes.io/",
-      "dependencies": ["Docker"],
-      "leads_to": ["Helm", "Istio"]
+      "dependencies": [
+        "Docker"
+      ],
+      "leads_to": [
+        "Helm",
+        "Istio"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"
     },
     {
       "id": 28,
       "name": "Git",
       "category": "Version Control",
-      "icon": "fab fa-git-alt",
       "desc": "Distributed version control system. Track changes, collaborate, never lose code!",
       "url": "https://git-scm.com/",
       "dependencies": [],
-      "leads_to": ["GitHub", "GitLab"]
+      "leads_to": [
+        "GitHub",
+        "GitLab"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
     },
     {
       "id": 29,
       "name": "GitHub",
       "category": "Version Control",
-      "icon": "fab fa-github",
       "desc": "Git repository hosting with collaboration features. Where code lives and thrives!",
       "url": "https://github.com/",
-      "dependencies": ["Git"],
-      "leads_to": ["GitHub Actions"]
+      "dependencies": [
+        "Git"
+      ],
+      "leads_to": [
+        "GitHub Actions"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
     },
     {
       "id": 30,
       "name": "GitHub Actions",
       "category": "CI/CD",
-      "icon": "fas fa-cogs",
       "desc": "Automate workflows from idea to production. CI/CD made simple and powerful!",
       "url": "https://github.com/features/actions",
-      "dependencies": ["GitHub"],
-      "leads_to": []
+      "dependencies": [
+        "GitHub"
+      ],
+      "leads_to": [],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
     },
     {
       "id": 31,
       "name": "Jenkins",
       "category": "CI/CD",
-      "icon": "fas fa-tools",
       "desc": "Extensible automation server. Build, test, and deploy with endless plugins!",
       "url": "https://www.jenkins.io/",
       "dependencies": [],
-      "leads_to": []
+      "leads_to": [],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-plain.svg"
     },
     {
       "id": 32,
       "name": "Next.js",
       "category": "Frontend",
-      "icon": "fas fa-forward",
       "desc": "React framework with server-side rendering. Full-stack React applications made easy!",
       "url": "https://nextjs.org/",
-      "dependencies": ["React"],
-      "leads_to": ["Vercel"]
+      "dependencies": [
+        "React"
+      ],
+      "leads_to": [
+        "Vercel"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
     },
     {
       "id": 33,
       "name": "Vercel",
       "category": "Deployment",
-      "icon": "fas fa-rocket",
       "desc": "Deploy frontend apps instantly. Git integration with global edge network!",
       "url": "https://vercel.com/",
       "dependencies": [],
-      "leads_to": []
+      "leads_to": [],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg"
     },
     {
       "id": 34,
       "name": "Netlify",
       "category": "Deployment",
-      "icon": "fas fa-globe",
       "desc": "Build, deploy, and manage modern web projects. JAMstack hosting platform!",
       "url": "https://www.netlify.com/",
       "dependencies": [],
-      "leads_to": []
+      "leads_to": [],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg"
     },
     {
       "id": 35,
       "name": "Stripe",
       "category": "Payment Systems",
-      "icon": "fab fa-stripe",
       "desc": "Online payment processing for internet businesses. Accept payments globally!",
       "url": "https://stripe.com/",
       "dependencies": [],
-      "leads_to": []
+      "leads_to": [],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/stripe/stripe-original.svg"
     },
     {
       "id": 36,
       "name": "PayPal",
       "category": "Payment Systems",
-      "icon": "fab fa-paypal",
       "desc": "Digital payment platform. Secure online money transfers and merchant services!",
       "url": "https://www.paypal.com/",
       "dependencies": [],
-      "leads_to": []
+      "leads_to": [],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/paypal/paypal-original.svg"
     },
     {
       "id": 37,
       "name": "Solidity",
       "category": "Blockchain",
-      "icon": "fab fa-ethereum",
       "desc": "Smart contract programming language. Build decentralized applications on Ethereum!",
       "url": "https://docs.soliditylang.org/",
       "dependencies": [],
-      "leads_to": ["Web3.js", "Ethereum"]
+      "leads_to": [
+        "Web3.js",
+        "Ethereum"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidity/solidity-original.svg"
     },
     {
       "id": 38,
       "name": "Web3.js",
       "category": "Blockchain",
-      "icon": "fas fa-link",
       "desc": "JavaScript library for Ethereum blockchain. Bridge web apps to decentralized world!",
       "url": "https://web3js.readthedocs.io/",
-      "dependencies": ["JavaScript"],
-      "leads_to": []
+      "dependencies": [
+        "JavaScript"
+      ],
+      "leads_to": [],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
     },
     {
       "id": 39,
       "name": "TensorFlow",
       "category": "AI / ML",
-      "icon": "fas fa-brain",
       "desc": "Open-source machine learning framework. From research to production ML models!",
       "url": "https://www.tensorflow.org/",
-      "dependencies": ["Python"],
-      "leads_to": ["Keras"]
+      "dependencies": [
+        "Python"
+      ],
+      "leads_to": [
+        "Keras"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
     },
     {
       "id": 40,
       "name": "PyTorch",
       "category": "AI / ML",
-      "icon": "fas fa-fire",
       "desc": "Dynamic neural network framework. Research-friendly deep learning library!",
       "url": "https://pytorch.org/",
-      "dependencies": ["Python"],
-      "leads_to": []
-    }
-    ,
+      "dependencies": [
+        "Python"
+      ],
+      "leads_to": [],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"
+    },
     {
       "id": 41,
       "name": "WebSockets",
       "category": "Realtime",
-      "icon": "fas fa-wave-square",
       "desc": "Low-latency, full-duplex communication over a single TCP connection. Ideal for chat, live dashboards, and multiplayer games. Use with native WebSocket API or libraries like Socket.io for fallbacks and reconnection logic.",
       "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API",
-      "dependencies": ["HTTP"],
-      "leads_to": ["Socket.io", "WebRTC"]
+      "dependencies": [
+        "HTTP"
+      ],
+      "leads_to": [
+        "Socket.io",
+        "WebRTC"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/websocket/websocket-plain.svg"
     },
     {
       "id": 42,
       "name": "WebRTC",
       "category": "Realtime",
-      "icon": "fas fa-video",
       "desc": "Peer-to-peer real-time media and data streams for audio, video and low-latency data channels. Used for video calls, screen sharing, and P2P data transfer. Involves signaling servers, NAT traversal (STUN/TURN), and codecs.",
       "url": "https://webrtc.org/",
-      "dependencies": ["WebSockets"],
-      "leads_to": []
+      "dependencies": [
+        "WebSockets"
+      ],
+      "leads_to": [],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webrtc/webrtc-original.svg"
     },
     {
       "id": 43,
       "name": "Kafka",
       "category": "Messaging",
-      "icon": "fas fa-stream",
       "desc": "Distributed streaming platform for building real-time data pipelines and event-driven architectures. Durable, partitioned logs with high throughput and fault tolerance. Great for analytics and event sourcing.",
       "url": "https://kafka.apache.org/",
       "dependencies": [],
-      "leads_to": ["Stream Processing"]
+      "leads_to": [
+        "Stream Processing"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg"
     },
     {
       "id": 44,
       "name": "RabbitMQ",
       "category": "Messaging",
-      "icon": "fas fa-envelope-open-text",
       "desc": "Traditional message broker implementing AMQP. Useful for decoupling services, retry policies, and guaranteed delivery patterns. Easier to reason about for smaller systems compared to Kafka.",
       "url": "https://www.rabbitmq.com/",
       "dependencies": [],
-      "leads_to": []
+      "leads_to": [],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rabbitmq/rabbitmq-original.svg"
     },
     {
       "id": 45,
       "name": "Load Balancing",
       "category": "System Design",
-      "icon": "fas fa-balance-scale",
       "desc": "Distributes network or application traffic across multiple servers to improve availability and reliability. Covers algorithms (round-robin, least connections), sticky sessions, and health checks.",
       "url": "https://en.wikipedia.org/wiki/Load_balancing_(computing)",
       "dependencies": [],
-      "leads_to": ["CDN", "Autoscaling"]
+      "leads_to": [
+        "CDN",
+        "Autoscaling"
+      ],
+      "iconUrl": "https://via.placeholder.com/48"
     },
     {
       "id": 46,
       "name": "CDN",
       "category": "System Design",
-      "icon": "fas fa-network-wired",
       "desc": "Content Delivery Networks cache static assets at the edge to reduce latency and offload origin servers. Important for global performance, caching headers, and cache invalidation strategies.",
       "url": "https://en.wikipedia.org/wiki/Content_delivery_network",
       "dependencies": [],
-      "leads_to": ["Caching"]
+      "leads_to": [
+        "Caching"
+      ],
+      "iconUrl": "https://via.placeholder.com/48"
     },
     {
       "id": 47,
       "name": "Prometheus",
       "category": "Observability",
-      "icon": "fas fa-chart-line",
       "desc": "Metrics collection and alerting toolkit for monitoring applications and infrastructure. Works well with Grafana for dashboards and alerting rules for production readiness.",
       "url": "https://prometheus.io/",
       "dependencies": [],
-      "leads_to": ["Grafana"]
+      "leads_to": [
+        "Grafana"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg"
     },
     {
       "id": 48,
       "name": "Grafana",
       "category": "Observability",
-      "icon": "fas fa-chart-pie",
       "desc": "Visualization and analytics platform used to query, visualize and alert on metrics and logs. Pairs with Prometheus, Loki, and tracing providers to give an observability stack.",
       "url": "https://grafana.com/",
-      "dependencies": ["Prometheus"],
-      "leads_to": []
+      "dependencies": [
+        "Prometheus"
+      ],
+      "leads_to": [],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg"
     },
     {
       "id": 49,
       "name": "Event Sourcing",
       "category": "System Design",
-      "icon": "fas fa-history",
       "desc": "Modeling pattern where state changes are stored as a sequence of events. Enables audit logs, time-travel debugging, and rebuilding state; often paired with CQRS and message brokers.",
       "url": "https://martinfowler.com/eaaDev/EventSourcing.html",
       "dependencies": [],
-      "leads_to": ["Kafka", "CQRS"]
+      "leads_to": [
+        "Kafka",
+        "CQRS"
+      ],
+      "iconUrl": "https://via.placeholder.com/48"
     },
     {
       "id": 50,
       "name": "WebTransport",
       "category": "Realtime",
-      "icon": "fas fa-exchange-alt",
       "desc": "A modern transport API built on QUIC for reliable and unreliable streams for web applications. Emerging tech for performant client-server real-time data with lower latency than TCP-based transports.",
       "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebTransport",
       "dependencies": [],
-      "leads_to": []
-    }
-    ,
+      "leads_to": [],
+      "iconUrl": "https://via.placeholder.com/48"
+    },
     {
       "id": 51,
       "name": "Svelte",
       "category": "Frontend",
-      "icon": "fas fa-fire",
       "desc": "A compiler-first UI framework that produces highly optimized vanilla JS. Great for lightweight apps with fast load times and minimal runtime overhead.",
       "url": "https://svelte.dev/",
-      "dependencies": ["JavaScript"],
-      "leads_to": ["Sapper", "SvelteKit"]
+      "dependencies": [
+        "JavaScript"
+      ],
+      "leads_to": [
+        "Sapper",
+        "SvelteKit"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg"
     },
     {
       "id": 52,
       "name": "Astro",
       "category": "Frontend",
-      "icon": "fas fa-meteor",
       "desc": "Modern static-site builder focused on shipping less JavaScript by default. Works with multiple UI frameworks and is ideal for content-driven sites.",
       "url": "https://astro.build/",
       "dependencies": [],
-      "leads_to": ["Vite"]
+      "leads_to": [
+        "Vite"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/astro/astro-original.svg"
     },
     {
       "id": 53,
       "name": "Storybook",
       "category": "Frontend",
-      "icon": "fas fa-book-open",
       "desc": "Component-driven development environment for building, testing, and documenting UI components in isolation. Essential for design systems.",
       "url": "https://storybook.js.org/",
-      "dependencies": ["React", "Vue.js", "Svelte"],
-      "leads_to": []
+      "dependencies": [
+        "React",
+        "Vue.js",
+        "Svelte"
+      ],
+      "leads_to": [],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/storybook/storybook-original.svg"
     },
     {
       "id": 54,
       "name": "FastAPI",
       "category": "Backend",
-      "icon": "fas fa-bolt",
       "desc": "Modern, fast (high-performance) web framework for building APIs with Python 3.8+ based on standard Python type hints. Great for production APIs with automatic docs.",
       "url": "https://fastapi.tiangolo.com/",
-      "dependencies": ["Python"],
-      "leads_to": ["OpenAPI", "Docker"]
+      "dependencies": [
+        "Python"
+      ],
+      "leads_to": [
+        "OpenAPI",
+        "Docker"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-plain.svg"
     },
     {
       "id": 55,
       "name": "Terraform",
       "category": "Cloud & DevOps",
-      "icon": "fas fa-cloud",
       "desc": "Infrastructure as Code tool to provision and manage cloud resources declaratively across multiple providers. A core skill for reproducible infra.",
       "url": "https://www.terraform.io/",
       "dependencies": [],
-      "leads_to": ["AWS", "GCP", "Azure"]
+      "leads_to": [
+        "AWS",
+        "GCP",
+        "Azure"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg"
     },
     {
       "id": 56,
       "name": "Jest",
       "category": "Testing",
-      "icon": "fas fa-vial",
       "desc": "Delightful JavaScript testing framework with a focus on simplicity. Widely used for unit and snapshot tests in React and Node projects.",
       "url": "https://jestjs.io/",
-      "dependencies": ["JavaScript"],
-      "leads_to": ["React Testing Library"]
+      "dependencies": [
+        "JavaScript"
+      ],
+      "leads_to": [
+        "React Testing Library"
+      ],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg"
     },
     {
       "id": 57,
       "name": "Cypress",
       "category": "Testing",
-      "icon": "fas fa-rocket",
       "desc": "End-to-end testing tool for the modern web. Fast, reliable, and developer-friendly for testing user flows in the browser.",
       "url": "https://www.cypress.io/",
-      "dependencies": ["JavaScript"],
-      "leads_to": []
+      "dependencies": [
+        "JavaScript"
+      ],
+      "leads_to": [],
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cypressio/cypressio-plain.svg"
     },
     {
       "id": 58,
       "name": "Auth0",
       "category": "Authentication",
-      "icon": "fas fa-user-shield",
       "desc": "Authentication and authorization-as-a-service. Simplifies login flows, social identity providers, and tokens so teams can focus on product.",
       "url": "https://auth0.com/",
       "dependencies": [],
-      "leads_to": ["OAuth 2.0", "JWT"]
+      "leads_to": [
+        "OAuth 2.0",
+        "JWT"
+      ],
+      "iconUrl": "https://via.placeholder.com/48"
     },
     {
       "id": 59,
       "name": "Serverless Functions",
       "category": "Serverless",
-      "icon": "fas fa-bolt",
       "desc": "Tiny single-purpose functions (AWS Lambda, Vercel/Netlify functions) that run on demand. Great for scaling APIs without managing servers.",
       "url": "https://en.wikipedia.org/wiki/Serverless_computing",
       "dependencies": [],
-      "leads_to": ["AWS Lambda", "Vercel"]
+      "leads_to": [
+        "AWS Lambda",
+        "Vercel"
+      ],
+      "iconUrl": "https://via.placeholder.com/48"
     },
     {
       "id": 60,
       "name": "Hugging Face",
       "category": "AI / ML",
-      "icon": "fas fa-robot",
       "desc": "A central hub for NLP and generative AI models, datasets, and tooling. Hugging Face simplifies using and deploying modern transformer models.",
       "url": "https://huggingface.co/",
-      "dependencies": ["Python"],
-      "leads_to": ["PyTorch", "TensorFlow"]
+      "dependencies": [
+        "Python"
+      ],
+      "leads_to": [
+        "PyTorch",
+        "TensorFlow"
+      ],
+      "iconUrl": "https://via.placeholder.com/48"
     }
   ],
   "categories": [

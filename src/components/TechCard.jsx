@@ -39,7 +39,7 @@ const TechCard = ({ tech }) => {
       <div className={`card-inner ${flipped ? 'is-flipped' : ''}`}>
         <div className="card-front">
           <div className="tech-icon">
-            <i className={tech.icon}></i>
+            <img src={tech.iconUrl} alt={tech.name} />
           </div>
           <h3 className="tech-name">{tech.name}</h3>
           <span className="tech-category">{tech.category}</span>

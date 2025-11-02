@@ -104,6 +104,231 @@
       "position": { "x": 400, "y": 600 },
       "color": "#00c7b7"
     }
+    ,
+    {
+      "id": "redis",
+      "name": "Redis",
+      "category": "Database",
+      "level": 4,
+      "position": { "x": 200, "y": 420 },
+      "color": "#dc382d"
+    },
+    {
+      "id": "elasticsearch",
+      "name": "Elasticsearch",
+      "category": "Database",
+      "level": 4,
+      "position": { "x": 800, "y": 420 },
+      "color": "#005571"
+    },
+    {
+      "id": "cassandra",
+      "name": "Cassandra",
+      "category": "Database",
+      "level": 4,
+      "position": { "x": 700, "y": 300 },
+      "color": "#1283c5"
+    },
+    {
+      "id": "kafka",
+      "name": "Kafka",
+      "category": "Messaging",
+      "level": 5,
+      "position": { "x": 900, "y": 300 },
+      "color": "#231f20"
+    },
+    {
+      "id": "rabbitmq",
+      "name": "RabbitMQ",
+      "category": "Messaging",
+      "level": 5,
+      "position": { "x": 900, "y": 380 },
+      "color": "#ff6600"
+    },
+    {
+      "id": "kubernetes",
+      "name": "Kubernetes",
+      "category": "DevOps",
+      "level": 6,
+      "position": { "x": 300, "y": 700 },
+      "color": "#326ce5"
+    },
+    {
+      "id": "helm",
+      "name": "Helm",
+      "category": "DevOps",
+      "level": 6,
+      "position": { "x": 380, "y": 760 },
+      "color": "#0f172a"
+    },
+    {
+      "id": "istio",
+      "name": "Istio",
+      "category": "DevOps",
+      "level": 6,
+      "position": { "x": 460, "y": 740 },
+      "color": "#2c3e50"
+    },
+    {
+      "id": "jenkins",
+      "name": "Jenkins",
+      "category": "CI/CD",
+      "level": 6,
+      "position": { "x": 600, "y": 700 },
+      "color": "#d33833"
+    },
+    {
+      "id": "terraform",
+      "name": "Terraform",
+      "category": "DevOps",
+      "level": 6,
+      "position": { "x": 520, "y": 620 },
+      "color": "#6f42c1"
+    },
+    {
+      "id": "prometheus",
+      "name": "Prometheus",
+      "category": "Observability",
+      "level": 6,
+      "position": { "x": 720, "y": 620 },
+      "color": "#e6522c"
+    },
+    {
+      "id": "grafana",
+      "name": "Grafana",
+      "category": "Observability",
+      "level": 6,
+      "position": { "x": 820, "y": 680 },
+      "color": "#f66c00"
+    },
+    {
+      "id": "s3",
+      "name": "S3",
+      "category": "AWS",
+      "level": 6,
+      "position": { "x": 620, "y": 520 },
+      "color": "#569a31"
+    },
+    {
+      "id": "ec2",
+      "name": "EC2",
+      "category": "AWS",
+      "level": 6,
+      "position": { "x": 700, "y": 520 },
+      "color": "#ff9900"
+    },
+    {
+      "id": "lambda",
+      "name": "Lambda",
+      "category": "AWS",
+      "level": 6,
+      "position": { "x": 780, "y": 520 },
+      "color": "#ff9900"
+    },
+    {
+      "id": "rds",
+      "name": "RDS",
+      "category": "Database",
+      "level": 5,
+      "position": { "x": 640, "y": 440 },
+      "color": "#2b6cb0"
+    },
+    {
+      "id": "cloudfront",
+      "name": "CloudFront",
+      "category": "AWS",
+      "level": 7,
+      "position": { "x": 860, "y": 560 },
+      "color": "#0052a5"
+    },
+    {
+      "id": "apigateway",
+      "name": "API Gateway",
+      "category": "AWS",
+      "level": 6,
+      "position": { "x": 740, "y": 460 },
+      "color": "#ff9900"
+    },
+    {
+      "id": "websockets",
+      "name": "WebSockets",
+      "category": "Realtime",
+      "level": 4,
+      "position": { "x": 100, "y": 420 },
+      "color": "#00a3e0"
+    },
+    {
+      "id": "socketio",
+      "name": "Socket.io",
+      "category": "Realtime",
+      "level": 5,
+      "position": { "x": 220, "y": 480 },
+      "color": "#010101"
+    },
+    {
+      "id": "webrtc",
+      "name": "WebRTC",
+      "category": "Realtime",
+      "level": 5,
+      "position": { "x": 240, "y": 420 },
+      "color": "#663399"
+    },
+    {
+      "id": "solidity",
+      "name": "Solidity",
+      "category": "Blockchain",
+      "level": 5,
+      "position": { "x": 980, "y": 220 },
+      "color": "#3c3c3d"
+    },
+    {
+      "id": "web3js",
+      "name": "Web3.js",
+      "category": "Blockchain",
+      "level": 6,
+      "position": { "x": 1080, "y": 260 },
+      "color": "#2b6df6"
+    },
+    {
+      "id": "hardhat",
+      "name": "Hardhat",
+      "category": "Blockchain",
+      "level": 6,
+      "position": { "x": 980, "y": 300 },
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "polygon",
+      "name": "Polygon",
+      "category": "Blockchain",
+      "level": 6,
+      "position": { "x": 1080, "y": 320 },
+      "color": "#8247e5"
+    },
+    {
+      "id": "huggingface",
+      "name": "Hugging Face",
+      "category": "AI / ML",
+      "level": 6,
+      "position": { "x": 1000, "y": 520 },
+      "color": "#f7931a"
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "category": "AI / ML",
+      "level": 6,
+      "position": { "x": 920, "y": 520 },
+      "color": "#10a37f"
+    },
+    {
+      "id": "tf_serving",
+      "name": "TensorFlow Serving",
+      "category": "AI / ML",
+      "level": 6,
+      "position": { "x": 840, "y": 520 },
+      "color": "#ff6f00"
+    }
   ],
   "edges": [
     {
@@ -183,6 +408,169 @@
       "source": "docker",
       "target": "aws",
       "type": "deployment"
+    }
+    ,
+    {
+      "id": "express-redis",
+      "source": "express",
+      "target": "redis",
+      "type": "cache"
+    },
+    {
+      "id": "node-websockets",
+      "source": "nodejs",
+      "target": "websockets",
+      "type": "realtime"
+    },
+    {
+      "id": "node-socketio",
+      "source": "nodejs",
+      "target": "socketio",
+      "type": "realtime"
+    },
+    {
+      "id": "websockets-socketio",
+      "source": "websockets",
+      "target": "socketio",
+      "type": "implementation"
+    },
+    {
+      "id": "webrtc-websockets",
+      "source": "webrtc",
+      "target": "websockets",
+      "type": "signaling"
+    },
+    {
+      "id": "express-kafka",
+      "source": "express",
+      "target": "kafka",
+      "type": "integration"
+    },
+    {
+      "id": "express-rabbitmq",
+      "source": "express",
+      "target": "rabbitmq",
+      "type": "integration"
+    },
+    {
+      "id": "docker-kubernetes",
+      "source": "docker",
+      "target": "kubernetes",
+      "type": "orchestration"
+    },
+    {
+      "id": "kubernetes-helm",
+      "source": "kubernetes",
+      "target": "helm",
+      "type": "package"
+    },
+    {
+      "id": "kubernetes-istio",
+      "source": "kubernetes",
+      "target": "istio",
+      "type": "service-mesh"
+    },
+    {
+      "id": "terraform-aws",
+      "source": "terraform",
+      "target": "aws",
+      "type": "provision"
+    },
+    {
+      "id": "jenkins-kubernetes",
+      "source": "jenkins",
+      "target": "kubernetes",
+      "type": "ci-cd"
+    },
+    {
+      "id": "prometheus-kubernetes",
+      "source": "prometheus",
+      "target": "kubernetes",
+      "type": "monitoring"
+    },
+    {
+      "id": "prometheus-grafana",
+      "source": "prometheus",
+      "target": "grafana",
+      "type": "visualization"
+    },
+    {
+      "id": "aws-s3",
+      "source": "aws",
+      "target": "s3",
+      "type": "service"
+    },
+    {
+      "id": "s3-cloudfront",
+      "source": "s3",
+      "target": "cloudfront",
+      "type": "cdn"
+    },
+    {
+      "id": "apigateway-lambda",
+      "source": "apigateway",
+      "target": "lambda",
+      "type": "integration"
+    },
+    {
+      "id": "lambda-ec2",
+      "source": "lambda",
+      "target": "ec2",
+      "type": "complement"
+    },
+    {
+      "id": "rds-postgres",
+      "source": "rds",
+      "target": "postgresql",
+      "type": "managed-db"
+    },
+    {
+      "id": "redis-express",
+      "source": "redis",
+      "target": "express",
+      "type": "cache"
+    },
+    {
+      "id": "elasticsearch-postgres",
+      "source": "elasticsearch",
+      "target": "postgresql",
+      "type": "search"
+    },
+    {
+      "id": "kafka-streams",
+      "source": "kafka",
+      "target": "elasticsearch",
+      "type": "ingest"
+    },
+    {
+      "id": "solidity-web3",
+      "source": "solidity",
+      "target": "web3js",
+      "type": "sdk"
+    },
+    {
+      "id": "hardhat-solidity",
+      "source": "hardhat",
+      "target": "solidity",
+      "type": "tooling"
+    },
+    {
+      "id": "polygon-web3",
+      "source": "polygon",
+      "target": "web3js",
+      "type": "layer2"
+    },
+    {
+      "id": "huggingface-tf",
+      "source": "huggingface",
+      "target": "tf_serving",
+      "type": "model-serving"
+    },
+    {
+      "id": "openai-hf",
+      "source": "openai",
+      "target": "huggingface",
+      "type": "ai-apis"
     }
   ]
 }
