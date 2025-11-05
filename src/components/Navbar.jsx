@@ -10,7 +10,8 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
     setOpen(false);
   }, [currentPage]);
   const navItems = [
-    { key: 'home', label: 'FullstackSchool', icon: 'fas fa-code' },
+    { key: 'home', label: 'Home', icon: 'fas fa-home' },
+    { key: 'frontend', label: 'FullstackSchool', icon: 'fas fa-code' },
     { key: 'techtree', label: 'Tech Tree', icon: 'fas fa-project-diagram' }
   ];
 
@@ -22,7 +23,7 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
       transition={{ duration: 0.6 }}
     >
       <div className="nav-container">
-        <div className="nav-brand" onClick={() => setCurrentPage('home')} role="button" tabIndex={0} aria-label="Go home">
+        <div className="nav-brand" onClick={() => setCurrentPage('frontend')} role="button" tabIndex={0} aria-label="Go to frontend">
           <div>
             <i className="fas fa-code" aria-hidden></i>
             <span>FullstackSchool</span>
@@ -31,7 +32,11 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
         </div>
         
         <div className="nav-menu">
-          {currentPage !== 'home' && navItems.slice(1).map((item) => (
+          {navItems.filter(item => 
+            item.key !== currentPage && 
+            item.key !== 'frontend' && 
+            !(currentPage === 'home' && item.key === 'techtree')
+          ).map((item) => (
             <motion.div
               key={item.key}
               className={`nav-item ${currentPage === item.key ? 'active' : ''}`}

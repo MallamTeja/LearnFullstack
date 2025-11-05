@@ -40,7 +40,7 @@ const HeroSection = ({ setCurrentPage }) => {
                 delay: 0.1
               }}
             >
-              Where confused devs get unconfused. (Yes, really.)
+              Where confused devs get unconfused.
             </motion.p>
           </div>
           
@@ -106,7 +106,7 @@ const HeroSection = ({ setCurrentPage }) => {
                   <i className="fab fa-java"></i>
                 </div>
                 <h4>Java Stack</h4>
-                <p>Spring Boot, MySQL, Thymeleaf</p>
+                <p>Spring Boot, MySQL and  Thymeleaf </p>
                 <div className="stack-badge">Robust</div>
               </motion.div>
 
