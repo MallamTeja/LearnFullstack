@@ -12,17 +12,7 @@ A modern, interactive learning platform that visualizes technology stacks and le
 
 ---
 
-## Table of Contents
-- Features
-- Demo
-- Tech Stack
-- Project Structure
-- Getting Started
-- Available Scripts
-- Data Model
-- Deployment
-- Contributing
-- License
+
 
 ---
 
@@ -33,10 +23,6 @@ A modern, interactive learning platform that visualizes technology stacks and le
 - Flip-card style technology details with resources and descriptions
 - Smooth page transitions and animations via Framer Motion
 - Responsive, mobile-first UI
-
-## Demo
-- Local development starts on http://localhost:3000
-- Static build served by Express from the build directory
 
 ## Tech Stack
 - Frontend: React 18, Framer Motion, React Flow, AOS (Animate on Scroll)
@@ -112,9 +98,7 @@ This runs `node server.js` which serves the build/ directory at http://localhost
 - test: Run CRA test runner
 - eject: Eject CRA configuration
 
-## Data Model
-- src/data/techtree.json: Graph-like structure for nodes and edges representing technology dependencies
-- src/data/techlist.json: Flat list of technologies with metadata used by TechGrid/TechCard
+.json: Flat list of technologies with metadata used by TechGrid/TechCard
 
 ## Key Components
 - Navbar: Top navigation with category entries and mobile menu
@@ -123,35 +107,9 @@ This runs `node server.js` which serves the build/ directory at http://localhost
 - TechGrid + TechCard: Interactive cards with flip animations/resources
 - SearchBar + CategorySelector: Quick filtering and category selection
 
-## Deployment
-- Static hosting: Build with `npm run build` and host the build/ directory on any static host
-- Node/Express: Use `npm start` (server.js) to serve the production build
-- Docker (example Dockerfile):
-```
-# syntax=docker/dockerfile:1
-FROM node:18-alpine as build
-WORKDIR /app
-COPY package*.json ./
-RUN npm ci
-COPY . .
-RUN npm run build
 
-FROM node:18-alpine
-WORKDIR /app
-COPY --from=build /app/build ./build
-COPY server.js package*.json ./
-RUN npm ci --omit=dev
-EXPOSE 3000
-CMD ["npm", "start"]
-```
 
-## Contributing
-- Fork the repo and create a branch: `feat/<your-feature>`
-- Follow the existing code style (functional components, CSS per component)
-- Open a pull request with a concise description and screenshots/gifs where relevant
 
-## License
-This project is licensed under the MIT License.
 
 ---
 
